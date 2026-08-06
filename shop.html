@@ -1,0 +1,1536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shop | Ashik Computer & Multimedia</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+<!-- ========================================================= -->
+<!-- TOP HEADER START -->
+<!-- ========================================================= -->
+
+<div class="top-header">
+
+    <div class="container">
+
+        <div class="top-left">
+
+            <span>
+                <i class="fa-solid fa-phone"></i>
+                +880 1518404428
+            </span>
+
+            <span>
+                <i class="fa-solid fa-envelope"></i>
+                ashikur199501@gmail.com
+            </span>
+
+        </div>
+
+        <div class="top-right">
+
+            <a href="track_order.html"><i class="fa-solid fa-truck-fast"></i> Track Order</a>
+
+            <a href="login.html"><i class="fa-solid fa-right-to-bracket"></i> Login</a>
+
+            <a href="register.html"><i class="fa-solid fa-user-plus"></i> Register</a>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- ========================================================= -->
+<!-- TOP HEADER END -->
+<!-- ========================================================= -->
+
+
+<!-- ========================================================= -->
+<!-- HEADER START -->
+<!-- ========================================================= -->
+
+<header class="header">
+
+    <div class="container">
+
+        <a href="index.html" class="logo">
+
+            <i class="fa-solid fa-computer"></i>
+
+            <div class="logo-text">
+                <h2>Ashik Computer</h2>
+                <p>& Multimedia</p>
+            </div>
+
+        </a>
+
+        
+        <form class="search-box" id="searchForm">
+
+            <select id="categorySelect">
+                <option value="all">All Categories</option>
+                <option value="laptop">Laptop</option>
+                <option value="desktop">Desktop</option>
+                <option value="gaming">Gaming PC</option>
+                <option value="monitor">Monitor</option>
+                <option value="printer">Printer</option>
+                <option value="accessories">Accessories</option>
+                <option value="networking">Networking</option>
+                <option value="cctv">CCTV</option>
+            </select>
+        
+            <input
+                type="search"
+                id="searchInput"
+                placeholder="Search Products..."
+            >
+        
+            <button type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        
+        </form>
+        
+        <div class="header-icons">
+
+            <a href="wishlist.html">
+                <i class="fa-regular fa-heart"></i>
+            </a>
+
+            <a href="cart.html" class="cart-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>2</span>
+            </a>
+
+            <div class="cart-price">
+                <small>Cart Total</small>
+                <strong>৳0.00</strong>
+            </div>
+
+            <a href="account.html">
+                <i class="fa-regular fa-user"></i>
+            </a>
+
+            <button class="menu-toggle" id="toggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+<!-- ========================================================= -->
+<!-- HEADER END -->
+<!-- ========================================================= -->
+
+
+<!-- ========================================================= -->
+<!-- NAVIGATION START -->
+<!-- ========================================================= -->
+
+<nav class="navbar">
+
+    <div class="container">
+
+        <ul class="nav-links">
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a class="active" href="shop.html">Shop</a></li>
+
+            <li><a href="categories.html">Categories</a></li>
+
+            <li><a href="brands.html">Brands</a></li>
+
+            <li><a href="offers.html">Offers</a></li>
+
+            <li><a href="about.html">About Us</a></li>
+
+            <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+
+    </div>
+
+</nav>
+
+<!-- ========================================================= -->
+<!-- NAVIGATION END -->
+<!-- ========================================================= -->
+
+<!-- ========================================================= -->
+<!-- SHOP BANNER START -->
+<!-- ========================================================= -->
+
+<section class="shop-banner">
+
+    <div class="container">
+
+        <div class="shop-banner-content">
+
+            <h1>Shop</h1>
+
+            <p>
+
+                <a href="index.html">Home</a>
+
+                <span>/</span>
+
+                <span>Shop</span>
+
+            </p>
+
+            <h4>
+
+                Discover Genuine Laptops, Desktop PCs, Gaming Computers,
+                Printers, Networking Devices, CCTV Systems and Accessories
+                at the Best Prices in Bangladesh.
+
+            </h4>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================================= -->
+<!-- SHOP BANNER END -->
+<!-- ========================================================= -->
+
+
+
+<!-- ========================================================= -->
+<!-- SHOP PRODUCTS START -->
+<!-- ========================================================= -->
+
+<section class="shop-products">
+
+    <div class="container">
+
+        <!-- ========================================================= -->
+        <!-- SHOP SIDEBAR START -->
+        <!-- ========================================================= -->
+
+        <aside class="shop-sidebar">
+
+            <!-- Search -->
+
+            <div class="sidebar-box">
+
+                <h3>Search Products</h3>
+
+                <div class="sidebar-search">
+
+                    <input type="search" placeholder="Search products...">
+
+                    <button>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- Categories -->
+
+            <div class="sidebar-box">
+
+                <h3>Categories</h3>
+
+                <ul>
+
+                    <li><a href="#" data-filter="all">🛍 All Products <span>(32)</span></a></li>
+
+                    <li><a href="#" data-filter="laptop">💻 Laptop <span>(12)</span></a></li>
+
+                    <li><a href="#" data-filter="desktop">🖥 Desktop PC <span>(8)</span></a></li>
+
+                    <li><a href="#" data-filter="gaming">🎮 Gaming PC <span>(5)</span></a></li>
+
+                    <li><a href="#" data-filter="monitor">🖥 Monitor <span>(10)</span></a></li>
+
+                    <li><a href="#" data-filter="printer">🖨 Printer <span>(6)</span></a></li>
+
+                    <li><a href="#" data-filter="accessories">⌨ Accessories <span>(20)</span></a></li>
+
+                    <li><a href="#" data-filter="networking">📡 Networking <span>(7)</span></a></li>
+
+                    <li><a href="#" data-filter="cctv">📷 CCTV <span>(5)</span></a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Brands -->
+
+            <div class="sidebar-box">
+
+                <h3>Popular Brands</h3>
+            
+                <ul>
+            
+                    <li><a href="#" data-brand="asus">ASUS</a></li>
+            
+                    <li><a href="#" data-brand="dell">Dell</a></li>
+            
+                    <li><a href="#" data-brand="hp">HP</a></li>
+            
+                    <li><a href="#" data-brand="lenovo">Lenovo</a></li>
+            
+                    <li><a href="#" data-brand="acer">Acer</a></li>
+            
+                    <li><a href="#" data-brand="msi">MSI</a></li>
+            
+                    <li><a href="#" data-brand="canon">Canon</a></li>
+            
+                    <li><a href="#" data-brand="tp-link">TP-Link</a></li>
+            
+                </ul>
+            
+            </div>
+
+            <!-- Price -->
+
+            <div class="sidebar-box">
+
+                <h3>Price Range</h3>
+
+                <ul>
+
+                    <li><a href="#">৳0 - ৳10,000</a></li>
+
+                    <li><a href="#">৳10,000 - ৳30,000</a></li>
+
+                    <li><a href="#">৳30,000 - ৳60,000</a></li>
+
+                    <li><a href="#">৳60,000 - ৳100,000</a></li>
+
+                    <li><a href="#">৳100,000+</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Flash Sale -->
+
+            <div class="sidebar-box offer-box">
+
+                <img src="images/offers/flash-sale.jpeg" alt="Flash Sale">
+
+            </div>
+
+        </aside>
+
+        <!-- ========================================================= -->
+        <!-- SHOP CONTENT START -->
+        <!-- ========================================================= -->
+
+        <div class="shop-content">
+
+            <div class="shop-top">
+
+                <h3>
+
+                    Showing
+
+                    <strong>1–8</strong>
+
+                    of
+
+                    <strong>32</strong>
+
+                    Products
+
+                </h3>
+
+                <select>
+
+                    <option>Default Sorting</option>
+                    <option>Newest First</option>
+                    <option>Best Selling</option>
+                    <option>Top Rated</option>
+                    <option>Price : Low to High</option>
+                    <option>Price : High to Low</option>
+
+                </select>
+
+            </div>
+
+ <!-- ========================================================= -->
+ <!-- PRODUCTS GRID START -->
+<!-- ========================================================= -->
+
+            <div class="products-grid">
+<!-- ========================================================= -->
+<!-- PRODUCT 01 -->
+<!-- ========================================================= -->
+
+<div class="product-card"
+     data-category="laptop"
+     data-brand="asus">
+
+    <div class="product-image">
+
+        <span class="product-badge sale">-10%</span>
+
+        <img src="images/products/asus-vivobook.jpeg"
+             alt="ASUS VivoBook 15">
+
+        <div class="product-icons">
+
+            <a href="#"><i class="fa-regular fa-heart"></i></a>
+
+            <a href="product_details.html">
+                <i class="fa-regular fa-eye"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-code-compare"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="product-content">
+
+        <span class="product-category">Laptop</span>
+
+        <h3>
+            <a href="product_details.html">
+                ASUS VivoBook 15 Core i5 13th Gen
+            </a>
+        </h3>
+
+        <div class="product-rating">
+
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+
+            <span>(25 Reviews)</span>
+
+        </div>
+
+        <div class="product-price">
+
+            <span class="new-price">৳72,500</span>
+            <span class="old-price">৳80,000</span>
+
+        </div>
+
+        <a href="#"
+   class="cart-btn"
+   data-name="ASUS VivoBook 15 Core i5 13th Gen"
+   data-price="72500"
+   data-image="images/products/asus-vivobook.jpeg">
+
+    <i class="fa-solid fa-cart-shopping"></i>
+    Add to Cart
+
+</a>
+
+    </div>
+
+</div>
+<!-- ========================================================= -->
+<!-- PRODUCT 02 -->
+<!-- ========================================================= -->
+
+<div class="product-card"
+     data-category="laptop"
+     data-brand="hp">
+
+    <div class="product-image">
+
+        <span class="product-badge new">New</span>
+
+        <img src="images/products/hp-pavilion.jpeg"
+             alt="HP Pavilion">
+
+        <div class="product-icons">
+
+            <a href="#"><i class="fa-regular fa-heart"></i></a>
+
+            <a href="product_details.html">
+                <i class="fa-regular fa-eye"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-code-compare"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="product-content">
+
+        <span class="product-category">Laptop</span>
+
+        <h3>
+
+            <a href="product_details.html">
+
+                HP Pavilion Ryzen 5 Laptop
+
+            </a>
+
+        </h3>
+
+        <div class="product-rating">
+
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+
+            <span>(18 Reviews)</span>
+
+        </div>
+
+        <div class="product-price">
+
+            <span class="new-price">৳85,000</span>
+
+        </div>
+
+        <a href="cart.html"
+        class="cart-btn"
+        data-name="HP Pavilion Ryzen 5 Laptop"
+        data-price="85000"
+        data-image="images/products/hp-pavilion.jpeg">
+     
+         <i class="fa-solid fa-cart-shopping"></i>
+         Add to Cart
+     
+     </a>
+    </div>
+
+</div>
+
+<!-- ========================================================= -->
+<!-- PRODUCT 03 -->
+<!-- ========================================================= -->
+
+<div class="product-card"
+     data-category="laptop"
+     data-brand="hp">
+
+    <div class="product-image">
+
+        <span class="product-badge new">New</span>
+
+        <img src="images/products/hp-pavilion.jpeg"
+             alt="HP Pavilion Ryzen 5 Laptop">
+
+        <div class="product-icons">
+
+            <a href="#">
+                <i class="fa-regular fa-heart"></i>
+            </a>
+
+            <a href="product_details.html">
+                <i class="fa-regular fa-eye"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-code-compare"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="product-content">
+
+        <span class="product-category">Laptop</span>
+
+        <h3>
+
+            <a href="product_details.html">
+
+                HP Pavilion Ryzen 5 Laptop
+
+            </a>
+
+        </h3>
+
+        <div class="product-rating">
+
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+
+            <span>(18 Reviews)</span>
+
+        </div>
+
+        <div class="product-price">
+
+            <span class="new-price">৳85,000</span>
+
+        </div>
+
+        <a href="cart.html"
+           class="cart-btn"
+           data-name="HP Pavilion Ryzen 5 Laptop"
+           data-price="85000"
+           data-image="images/products/hp-pavilion.jpeg">
+
+            <i class="fa-solid fa-cart-shopping"></i>
+            Add to Cart
+
+        </a>
+
+    </div>
+
+</div>
+
+<!-- ========================================================= -->
+<!-- PRODUCT 04 -->
+<!-- ========================================================= -->
+
+<div class="product-card"
+     data-category="laptop"
+     data-brand="lenovo">
+
+    <div class="product-image">
+
+        <img src="images/products/lenovo-ideapad.jpeg"
+             alt="Lenovo IdeaPad Slim 3">
+
+        <div class="product-icons">
+
+            <a href="#">
+                <i class="fa-regular fa-heart"></i>
+            </a>
+
+            <a href="product_details.html">
+                <i class="fa-regular fa-eye"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-code-compare"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="product-content">
+
+        <span class="product-category">Laptop</span>
+
+        <h3>
+
+            <a href="product_details.html">
+
+                Lenovo IdeaPad Slim 3
+
+            </a>
+
+        </h3>
+
+        <div class="product-rating">
+
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+
+            <span>(16 Reviews)</span>
+
+        </div>
+
+        <div class="product-price">
+
+            <span class="new-price">৳64,000</span>
+
+        </div>
+
+        <a href="cart.html"
+           class="cart-btn"
+           data-name="Lenovo IdeaPad Slim 3"
+           data-price="64000"
+           data-image="images/products/lenovo-ideapad.jpeg">
+
+            <i class="fa-solid fa-cart-shopping"></i>
+            Add to Cart
+
+        </a>
+
+    </div>
+
+</div>
+
+<!-- ========================================================= -->
+<!-- PRODUCT 05 -->
+<!-- ========================================================= -->
+<div class="product-card"
+     data-category="laptop"
+     data-brand="acer">
+
+    <div class="product-image">
+
+        <img src="images/products/acer-aspire.jpeg"
+             alt="Acer Aspire 5">
+
+        <div class="product-icons">
+
+            <a href="#">
+                <i class="fa-regular fa-heart"></i>
+            </a>
+
+            <a href="product_details.html">
+                <i class="fa-regular fa-eye"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-code-compare"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="product-content">
+
+        <span class="product-category">Laptop</span>
+
+        <h3>
+
+            <a href="product_details.html">
+
+                Acer Aspire 5
+
+            </a>
+
+        </h3>
+
+        <div class="product-price">
+
+            <span class="new-price">৳61,000</span>
+
+        </div>
+
+        <a href="cart.html"
+           class="cart-btn"
+           data-name="Acer Aspire 5"
+           data-price="61000"
+           data-image="images/products/acer-aspire.jpeg">
+
+            <i class="fa-solid fa-cart-shopping"></i>
+            Add to Cart
+
+        </a>
+
+    </div>
+
+</div>
+<!-- ========================================================= -->
+<!-- PRODUCT 06 -->
+<!-- ========================================================= -->
+
+<div class="product-card"
+     data-category="gaming"
+     data-brand="msi">
+
+    <div class="product-image">
+
+        <span class="product-badge hot">Hot</span>
+
+        <img src="images/products/msi-katana.jpeg"
+             alt="MSI Katana 15">
+
+        <div class="product-icons">
+
+            <a href="#">
+                <i class="fa-regular fa-heart"></i>
+            </a>
+
+            <a href="product_details.html">
+                <i class="fa-regular fa-eye"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-code-compare"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="product-content">
+
+        <span class="product-category">
+
+            Gaming Laptop
+
+        </span>
+
+        <h3>
+
+            <a href="product_details.html">
+
+                MSI Katana 15
+
+            </a>
+
+        </h3>
+
+        <div class="product-price">
+
+            <span class="new-price">
+
+                ৳115,000
+
+            </span>
+
+        </div>
+
+        <a href="cart.html"
+           class="cart-btn"
+           data-name="MSI Katana 15"
+           data-price="115000"
+           data-image="images/products/msi-katana.jpeg">
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            Add to Cart
+
+        </a>
+
+    </div>
+
+</div>
+
+
+<!-- ========================================================= -->
+<!-- PRODUCT 07 -->
+<!-- ========================================================= -->
+
+<div class="product-card"
+     data-category="printer"
+     data-brand="canon">
+
+    <div class="product-image">
+
+        <img src="images/products/canon-pixma-g3010.jpeg"
+             alt="Canon PIXMA G3010">
+
+        <div class="product-icons">
+
+            <a href="#">
+                <i class="fa-regular fa-heart"></i>
+            </a>
+
+            <a href="product_details.html">
+                <i class="fa-regular fa-eye"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-code-compare"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="product-content">
+
+        <span class="product-category">
+
+            Printer
+
+        </span>
+
+        <h3>
+
+            <a href="product_details.html">
+
+                Canon PIXMA G3010
+
+            </a>
+
+        </h3>
+
+        <div class="product-price">
+
+            <span class="new-price">
+
+                ৳16,500
+
+            </span>
+
+        </div>
+
+        <a href="cart.html"
+           class="cart-btn"
+           data-name="Canon PIXMA G3010"
+           data-price="16500"
+           data-image="images/products/canon-pixma-g3010.jpeg">
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            Add to Cart
+
+        </a>
+
+    </div>
+
+</div>
+<!-- ========================================================= -->
+<!-- PRODUCT 08 -->
+<!-- ========================================================= -->
+
+<div class="product-card"
+     data-category="networking"
+     data-brand="tp-link">
+
+    <div class="product-image">
+
+        <img src="images/products/tp-link-archer-c6.jpeg"
+             alt="TP-Link Archer C6 Router">
+
+        <div class="product-icons">
+
+            <a href="#">
+                <i class="fa-regular fa-heart"></i>
+            </a>
+
+            <a href="product_details.html">
+                <i class="fa-regular fa-eye"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-code-compare"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="product-content">
+
+        <span class="product-category">
+
+            Networking
+
+        </span>
+
+        <h3>
+
+            <a href="product_details.html">
+
+                TP-Link Archer C6
+
+            </a>
+
+        </h3>
+
+        <div class="product-price">
+
+            <span class="new-price">
+
+                ৳4,800
+
+            </span>
+
+        </div>
+
+        <a href="cart.html"
+           class="cart-btn"
+           data-name="TP-Link Archer C6"
+           data-price="4800"
+           data-image="images/products/tp-link-archer-c6.jpeg">
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            Add to Cart
+
+        </a>
+
+    </div>
+
+</div>
+
+<!-- ========================================================= -->
+<!-- PRODUCT 09 -->
+<!-- ========================================================= -->
+
+<div class="product-card"
+     data-category="desktop"
+     data-brand="asus">
+
+    <div class="product-image">
+
+        <span class="product-badge new">New</span>
+
+        <img src="images/desktop.png"
+             alt="ASUS ExpertCenter Desktop">
+
+        <div class="product-icons">
+
+            <a href="#"><i class="fa-regular fa-heart"></i></a>
+
+            <a href="product_details.html">
+                <i class="fa-regular fa-eye"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-code-compare"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="product-content">
+
+        <span class="product-category">Desktop PC</span>
+
+        <h3>
+            <a href="product_details.html">
+                ASUS ExpertCenter Core i5 13th Gen Desktop
+            </a>
+        </h3>
+
+        <div class="product-rating">
+
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+
+            <span>(21 Reviews)</span>
+
+        </div>
+
+        <div class="product-price">
+
+            <span class="new-price">৳68,500</span>
+            <span class="old-price">৳74,000</span>
+
+        </div>
+
+        <a href="#"
+           class="cart-btn"
+           data-name="ASUS ExpertCenter Core i5 Desktop"
+           data-price="68500"
+           data-image="images/desktop.png">
+
+            <i class="fa-solid fa-cart-shopping"></i>
+            Add to Cart
+
+        </a>
+
+    </div>
+
+</div>
+
+<!-- ========================================================= -->
+<!-- PRODUCT 10 -->
+<!-- ========================================================= -->
+
+<div class="product-card"
+     data-category="monitor"
+     data-brand="asus">
+
+    <div class="product-image">
+
+        <span class="product-badge sale">-8%</span>
+
+        <img src="images/Monitor.png"
+             alt="ASUS Full HD Monitor">
+
+        <div class="product-icons">
+
+            <a href="#"><i class="fa-regular fa-heart"></i></a>
+
+            <a href="product_details.html">
+                <i class="fa-regular fa-eye"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-code-compare"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="product-content">
+
+        <span class="product-category">Monitor</span>
+
+        <h3>
+
+            <a href="product_details.html">
+
+                ASUS 24'' Full HD IPS Monitor
+
+            </a>
+
+        </h3>
+
+        <div class="product-rating">
+
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+
+            <span>(18 Reviews)</span>
+
+        </div>
+
+        <div class="product-price">
+
+            <span class="new-price">৳18,500</span>
+            <span class="old-price">৳20,000</span>
+
+        </div>
+
+        <a href="#"
+           class="cart-btn"
+           data-name="ASUS 24 Inch Monitor"
+           data-price="18500"
+           data-image="images/Monitor.png">
+
+            <i class="fa-solid fa-cart-shopping"></i>
+            Add to Cart
+
+        </a>
+
+    </div>
+
+</div>
+
+<!-- ========================================================= -->
+<!-- PRODUCT 11 -->
+<!-- ========================================================= -->
+
+<div class="product-card"
+     data-category="accessories"
+     data-brand="logitech">
+
+    <div class="product-image">
+
+        <span class="product-badge hot">Hot</span>
+
+        <img src="images/Accessories.png"
+             alt="Logitech Keyboard & Mouse">
+
+        <div class="product-icons">
+
+            <a href="#"><i class="fa-regular fa-heart"></i></a>
+
+            <a href="product_details.html">
+                <i class="fa-regular fa-eye"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-code-compare"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="product-content">
+
+        <span class="product-category">Accessories</span>
+
+        <h3>
+
+            <a href="product_details.html">
+
+                Logitech Wireless Keyboard & Mouse Combo
+
+            </a>
+
+        </h3>
+
+        <div class="product-rating">
+
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+
+            <span>(27 Reviews)</span>
+
+        </div>
+
+        <div class="product-price">
+
+            <span class="new-price">৳4,200</span>
+
+        </div>
+
+        <a href="#"
+           class="cart-btn"
+           data-name="Logitech Keyboard Mouse Combo"
+           data-price="4200"
+           data-image="images/Accessories.png">
+
+            <i class="fa-solid fa-cart-shopping"></i>
+            Add to Cart
+
+        </a>
+
+    </div>
+
+</div>
+
+<!-- ========================================================= -->
+<!-- PRODUCT 12 -->
+<!-- ========================================================= -->
+
+<div class="product-card"
+     data-category="cctv"
+     data-brand="hikvision">
+
+    <div class="product-image">
+
+        <span class="product-badge sale">-15%</span>
+
+        <img src="images/CCTV.png"
+             alt="Hikvision CCTV Camera">
+
+        <div class="product-icons">
+
+            <a href="#"><i class="fa-regular fa-heart"></i></a>
+
+            <a href="product_details.html">
+                <i class="fa-regular fa-eye"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-code-compare"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="product-content">
+
+        <span class="product-category">CCTV</span>
+
+        <h3>
+
+            <a href="product_details.html">
+
+                Hikvision 2MP Outdoor Security Camera
+
+            </a>
+
+        </h3>
+
+        <div class="product-rating">
+
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+
+            <span>(31 Reviews)</span>
+
+        </div>
+
+        <div class="product-price">
+
+            <span class="new-price">৳3,850</span>
+            <span class="old-price">৳4,500</span>
+
+        </div>
+
+        <a href="#"
+           class="cart-btn"
+           data-name="Hikvision Outdoor CCTV Camera"
+           data-price="3850"
+           data-image="images/CCTV.png">
+
+            <i class="fa-solid fa-cart-shopping"></i>
+            Add to Cart
+
+        </a>
+
+    </div>
+
+</div>
+<!-- .products-grid END -->
+
+<!-- ========================================================= -->
+<!-- PAGINATION START -->
+<!-- ========================================================= -->
+
+<div class="pagination">
+
+    <a href="#">
+        <i class="fa-solid fa-angle-left"></i>
+    </a>
+
+    <a href="#" class="active">1</a>
+
+    <a href="#">2</a>
+
+    <a href="#">3</a>
+
+    <a href="#">4</a>
+
+    <a href="#">
+        <i class="fa-solid fa-angle-right"></i>
+    </a>
+
+</div>
+
+</div>
+<!-- .shop-content END -->
+
+</div>
+<!-- .container END -->
+
+</section>
+
+<!-- ========================================================= -->
+<!-- SHOP PRODUCTS END -->
+<!-- ========================================================= -->
+<!-- ========================================================= -->
+<!-- NEWSLETTER START -->
+<!-- ========================================================= -->
+
+<section class="newsletter">
+
+    <div class="container">
+
+        <div class="newsletter-content">
+
+            <h2>Subscribe Our Newsletter</h2>
+
+            <p>
+                Get the latest updates on new arrivals,
+                exclusive offers, discounts, and technology
+                news directly in your inbox.
+            </p>
+
+        </div>
+
+        <form class="newsletter-form">
+
+            <input
+                type="email"
+                placeholder="Enter your email address"
+                required
+            >
+
+            <button type="submit">
+                Subscribe
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<!-- ========================================================= -->
+<!-- NEWSLETTER END -->
+<!-- ========================================================= -->
+    
+     <!-- ========================================================= -->
+    <!-- FOOTER START -->
+    <!-- ========================================================= -->
+    
+    <footer class="footer">
+    
+        <div class="container">
+    
+            <!-- Company Info -->
+    
+            <div class="footer-box">
+    
+                <a href="index.html" class="footer-logo">
+    
+                    <i class="fa-solid fa-computer"></i>
+    
+                    <span>Ashik Computer & Multimedia</span>
+    
+                </a>
+    
+                <p>
+                    Your trusted destination for laptops, desktops,
+                    gaming PCs, printers, CCTV, networking devices,
+                    and computer accessories at the best prices.
+                </p>
+    
+                <div class="social-links">
+    
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+    
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+    
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+    
+                </div>
+    
+            </div>
+    
+            <!-- Quick Links -->
+    
+            <div class="footer-box">
+    
+                <h3>Quick Links</h3>
+    
+                <ul>
+    
+                    <li><a href="index.html">Home</a></li>
+    
+                    <li><a href="shop.html">Shop</a></li>
+    
+                    <li><a href="categories.html">Categories</a></li>
+    
+                    <li><a href="about.html">About Us</a></li>
+    
+                    <li><a href="contact.html">Contact</a></li>
+    
+                </ul>
+    
+            </div>
+    
+            <!-- Categories -->
+    
+            <div class="footer-box">
+    
+                <h3>Categories</h3>
+    
+                <ul>
+    
+                    <li><a href="#">Laptop</a></li>
+    
+                    <li><a href="#">Desktop PC</a></li>
+    
+                    <li><a href="#">Gaming PC</a></li>
+    
+                    <li><a href="#">Printer</a></li>
+    
+                    <li><a href="#">Accessories</a></li>
+    
+                </ul>
+    
+            </div>
+    
+            <!-- Contact -->
+    
+            <div class="footer-box">
+    
+                <h3>Contact Info</h3>
+    
+                <ul>
+    
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        Meherpur, Bangladesh
+                    </li>
+    
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        +880 1518404428
+                    </li>
+    
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        ashikur199501@gmail.com
+                    </li>
+    
+                    <li>
+                        <i class="fa-solid fa-clock"></i>
+                        Sat - Thu : 9:00 AM - 9:00 PM
+                    </li>
+    
+                </ul>
+    
+            </div>
+    
+        </div>
+    
+        <!-- Payment -->
+    
+        <div class="payment-area">
+    
+            <h4>We Accept</h4>
+    
+            <div class="payment-icons">
+    
+                <img src="images/payment/visa.png" alt="Visa">
+    
+                <img src="images/payment/mastercard.png" alt="MasterCard">
+    
+                <img src="images/payment/bkash.png" alt="bKash">
+    
+                <img src="images/payment/nagad.png" alt="Nagad">
+    
+                <img src="images/payment/rocket.png" alt="Rocket">
+    
+            </div>
+    
+        </div>
+    
+        <!-- Copyright -->
+    
+        <div class="copyright">
+    
+            <p>
+    
+                © 2026 Aishikur Rahman. All Rights Reserved.
+    
+            </p>
+    
+        </div>
+    
+    </footer>
+    
+    <!-- ========================================================= -->
+    <!-- FOOTER END -->
+    <!-- ========================================================= -->
+    <!-- JavaScript -->
+       
+   
+    <script src="js/script.js"></script>
+    
+    </body>
+    </html>
+    

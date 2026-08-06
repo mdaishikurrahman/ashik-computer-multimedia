@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Order History| Ashik Computer & Multimedia</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Product Details CSS -->
+    <link rel="stylesheet" href="css/order_history.css">
+
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+<!-- ========================================================= -->
+<!-- TOP HEADER START -->
+<!-- ========================================================= -->
+
+<div class="top-header">
+
+    <div class="container">
+
+        <div class="top-left">
+
+            <span>
+                <i class="fa-solid fa-phone"></i>
+                +880 1518404428
+            </span>
+
+            <span>
+                <i class="fa-solid fa-envelope"></i>
+                ashikur199501@gmail.com
+            </span>
+
+        </div>
+
+        <div class="top-right">
+
+            <a href="#"><i class="fa-solid fa-truck-fast"></i> Track Order</a>
+
+            <a href="#"><i class="fa-solid fa-right-to-bracket"></i> Login</a>
+
+            <a href="#"><i class="fa-solid fa-user-plus"></i> Register</a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ========================================================= -->
+<!-- TOP HEADER END -->
+<!-- ========================================================= -->
+
+
+<!-- ========================================================= -->
+<!-- HEADER START -->
+<!-- ========================================================= -->
+
+<header class="header">
+
+    <div class="container">
+
+        <a href="index.html" class="logo">
+
+            <i class="fa-solid fa-computer"></i>
+
+            <div class="logo-text">
+                <h2>Ashik Computer</h2>
+                <p>& Multimedia</p>
+            </div>
+
+        </a>
+
+        <form class="search-box">
+
+            <select>
+                <option>All Categories</option>
+                <option>Laptop</option>
+                <option>Desktop</option>
+                <option>Gaming PC</option>
+                <option>Monitor</option>
+                <option>Printer</option>
+                <option>Accessories</option>
+            </select>
+
+            <input
+                type="search"
+                placeholder="Search products..."
+            >
+
+            <button type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+        </form>
+
+        <div class="header-icons">
+
+            <a href="wishlist.html">
+                <i class="fa-regular fa-heart"></i>
+            </a>
+
+            <a href="cart.html" class="cart-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>2</span>
+            </a>
+
+            <div class="cart-price">
+                <small>Cart Total</small>
+                <strong>৳0.00</strong>
+            </div>
+
+            <a href="account.html">
+                <i class="fa-regular fa-user"></i>
+            </a>
+
+            <button class="menu-toggle" id="toggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+<!-- ========================================================= -->
+<!-- HEADER END -->
+<!-- ========================================================= -->
+
+
+<!-- ========================================================= -->
+<!-- NAVIGATION START -->
+<!-- ========================================================= -->
+
+<nav class="navbar">
+
+    <div class="container">
+
+        <ul class="nav-links">
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a class="active" href="shop.html">Shop</a></li>
+
+            <li><a href="categories.html">Categories</a></li>
+
+            <li><a href="brands.html">Brands</a></li>
+
+            <li><a href="offers.html">Offers</a></li>
+
+            <li><a href="about.html">About Us</a></li>
+
+            <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+
+    </div>
+
+</nav>
+
+<!-- ========================================================= -->
+<!-- NAVIGATION END -->
+<!-- ========================================================= -->
+   
+<<!-- ========================================================= -->
+<!-- ORDER HISTORY START -->
+<!-- ========================================================= -->
+
+<section class="order-history">
+
+    <div class="container">
+
+        <!-- ========================================================= -->
+        <!-- ORDER HISTORY HEADER -->
+        <!-- ========================================================= -->
+
+        <div class="history-header">
+
+            <h2>Order History</h2>
+
+            <p>
+
+                View and manage all your previous orders. Track order status,
+                download invoices and review your purchase history.
+
+            </p>
+
+        </div>
+
+        <!-- ========================================================= -->
+        <!-- ORDER SUMMARY -->
+        <!-- ========================================================= -->
+
+        <div class="history-summary">
+
+            <div class="summary-card">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                <h3>12</h3>
+
+                <p>Total Orders</p>
+
+            </div>
+
+            <div class="summary-card">
+
+                <i class="fa-solid fa-clock"></i>
+
+                <h3>2</h3>
+
+                <p>Pending</p>
+
+            </div>
+
+            <div class="summary-card">
+
+                <i class="fa-solid fa-truck"></i>
+
+                <h3>3</h3>
+
+                <p>Shipped</p>
+
+            </div>
+
+            <div class="summary-card">
+
+                <i class="fa-solid fa-circle-check"></i>
+
+                <h3>7</h3>
+
+                <p>Delivered</p>
+
+            </div>
+
+        </div>
+
+        <!-- ========================================================= -->
+        <!-- ORDER TABLE -->
+        <!-- ========================================================= -->
+
+        <div class="history-table">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Order ID</th>
+
+                        <th>Date</th>
+
+                        <th>Total</th>
+
+                        <th>Status</th>
+
+                        <th>Payment</th>
+
+                        <th>Action</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>#ACM-2026001</td>
+
+                        <td>08 Aug 2026</td>
+
+                        <td>৳169,950</td>
+
+                        <td>
+
+                            <span class="status delivered">
+
+                                Delivered
+
+                            </span>
+
+                        </td>
+
+                        <td>Cash on Delivery</td>
+
+                        <td>
+
+                            <a href="order-details.html"
+                               class="view-btn">
+
+                                View Details
+
+                            </a>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>#ACM-2026002</td>
+
+                        <td>15 Aug 2026</td>
+
+                        <td>৳85,000</td>
+
+                        <td>
+
+                            <span class="status shipped">
+
+                                Shipped
+
+                            </span>
+
+                        </td>
+
+                        <td>bKash</td>
+
+                        <td>
+
+                            <a href="order-details.html"
+                               class="view-btn">
+
+                                View Details
+
+                            </a>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>#ACM-2026003</td>
+
+                        <td>21 Aug 2026</td>
+
+                        <td>৳6,850</td>
+
+                        <td>
+
+                            <span class="status pending">
+
+                                Pending
+
+                            </span>
+
+                        </td>
+
+                        <td>Nagad</td>
+
+                        <td>
+
+                            <a href="order-details.html"
+                               class="view-btn">
+
+                                View Details
+
+                            </a>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>#ACM-2026004</td>
+
+                        <td>29 Aug 2026</td>
+
+                        <td>৳24,500</td>
+
+                        <td>
+
+                            <span class="status cancelled">
+
+                                Cancelled
+
+                            </span>
+
+                        </td>
+
+                        <td>Card</td>
+
+                        <td>
+
+                            <a href="order-details.html"
+                               class="view-btn">
+
+                                View Details
+
+                            </a>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <!-- ========================================================= -->
+        <!-- ACTION BUTTONS -->
+        <!-- ========================================================= -->
+
+        <div class="history-buttons">
+
+            <a href="shop.html" class="continue-btn">
+
+                Continue Shopping
+
+            </a>
+
+            <a href="track-order.html" class="track-btn">
+
+                Track Order
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================================= -->
+<!-- ORDER HISTORY END -->
+<!-- ========================================================= -->
+<!-- ========================================================= -->
+<!-- NEWSLETTER START -->
+<!-- ========================================================= -->
+
+<section class="newsletter">
+
+    <div class="container">
+
+        <div class="newsletter-content">
+
+            <h2>Subscribe Our Newsletter</h2>
+
+            <p>
+                Get the latest updates on new arrivals,
+                exclusive offers, discounts, and technology
+                news directly in your inbox.
+            </p>
+
+        </div>
+
+        <form class="newsletter-form">
+
+            <input
+                type="email"
+                placeholder="Enter your email address"
+                required
+            >
+
+            <button type="submit">
+                Subscribe
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<!-- ========================================================= -->
+<!-- NEWSLETTER END -->
+<!-- ========================================================= -->
+    
+     <!-- ========================================================= -->
+    <!-- FOOTER START -->
+    <!-- ========================================================= -->
+    
+    <footer class="footer">
+    
+        <div class="container">
+    
+            <!-- Company Info -->
+    
+            <div class="footer-box">
+    
+                <a href="index.html" class="footer-logo">
+    
+                    <i class="fa-solid fa-computer"></i>
+    
+                    <span>Ashik Computer & Multimedia</span>
+    
+                </a>
+    
+                <p>
+                    Your trusted destination for laptops, desktops,
+                    gaming PCs, printers, CCTV, networking devices,
+                    and computer accessories at the best prices.
+                </p>
+    
+                <div class="social-links">
+    
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+    
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+    
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+    
+                </div>
+    
+            </div>
+    
+            <!-- Quick Links -->
+    
+            <div class="footer-box">
+    
+                <h3>Quick Links</h3>
+    
+                <ul>
+    
+                    <li><a href="index.html">Home</a></li>
+    
+                    <li><a href="shop.html">Shop</a></li>
+    
+                    <li><a href="categories.html">Categories</a></li>
+    
+                    <li><a href="about.html">About Us</a></li>
+    
+                    <li><a href="contact.html">Contact</a></li>
+    
+                </ul>
+    
+            </div>
+    
+            <!-- Categories -->
+    
+            <div class="footer-box">
+    
+                <h3>Categories</h3>
+    
+                <ul>
+    
+                    <li><a href="#">Laptop</a></li>
+    
+                    <li><a href="#">Desktop PC</a></li>
+    
+                    <li><a href="#">Gaming PC</a></li>
+    
+                    <li><a href="#">Printer</a></li>
+    
+                    <li><a href="#">Accessories</a></li>
+    
+                </ul>
+    
+            </div>
+    
+            <!-- Contact -->
+    
+            <div class="footer-box">
+    
+                <h3>Contact Info</h3>
+    
+                <ul>
+    
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        Meherpur, Bangladesh
+                    </li>
+    
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        +880 1518404428
+                    </li>
+    
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        ashikur199501@gmail.com
+                    </li>
+    
+                    <li>
+                        <i class="fa-solid fa-clock"></i>
+                        Sat - Thu : 9:00 AM - 9:00 PM
+                    </li>
+    
+                </ul>
+    
+            </div>
+    
+        </div>
+    
+        <!-- Payment -->
+    
+        <div class="payment-area">
+    
+            <h4>We Accept</h4>
+    
+            <div class="payment-icons">
+    
+                <img src="images/payment/visa.png" alt="Visa">
+    
+                <img src="images/payment/mastercard.png" alt="MasterCard">
+    
+                <img src="images/payment/bkash.png" alt="bKash">
+    
+                <img src="images/payment/nagad.png" alt="Nagad">
+    
+                <img src="images/payment/rocket.png" alt="Rocket">
+    
+            </div>
+    
+        </div>
+    
+        <!-- Copyright -->
+    
+        <div class="copyright">
+    
+            <p>
+    
+                © 2026 Aishikur Rahman. All Rights Reserved.
+    
+            </p>
+    
+        </div>
+    
+    </footer>
+    
+    <!-- ========================================================= -->
+    <!-- FOOTER END -->
+    <!-- ========================================================= -->
+    <!-- JavaScript -->
+    
+    <script src="js/script.js"></script>
+    <script src="js/order_history.js"></script>
+   
+    
+    </body>
+    </html>
+    

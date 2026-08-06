@@ -1,0 +1,347 @@
+/* =========================================================
+   MY ACCOUNT
+========================================================= */
+
+.account{
+    padding:80px 0;
+    background:#f8fafc;
+}
+
+/* =========================================================
+   ACCOUNT HEADER
+========================================================= */
+
+.account-header{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.account-header h2{
+    font-size:42px;
+    color:#111827;
+    margin-bottom:12px;
+}
+
+.account-header p{
+    font-size:17px;
+    color:#6b7280;
+}
+
+.account-header strong{
+    color:#2563eb;
+}
+
+/* =========================================================
+   ACCOUNT WRAPPER
+========================================================= */
+
+.account-wrapper{
+    display:grid;
+    grid-template-columns:280px 1fr;
+    gap:30px;
+    align-items:flex-start;
+}
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.account-sidebar{
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,.06);
+}
+
+.profile-box{
+    text-align:center;
+    padding:35px 20px;
+    border-bottom:1px solid #e5e7eb;
+}
+
+.profile-box img{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid #2563eb;
+    margin-bottom:15px;
+}
+
+.profile-box h3{
+    font-size:28px;
+    color:#111827;
+    margin-bottom:8px;
+    line-height:1.3;
+}
+
+.profile-box span{
+    display:block;
+    color:#6b7280;
+    font-size:15px;
+}
+
+.account-menu{
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+.account-menu li a{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    padding:18px 25px;
+    text-decoration:none;
+    color:#374151;
+    font-weight:500;
+    border-bottom:1px solid #f1f5f9;
+    transition:.3s;
+}
+
+.account-menu li:last-child a{
+    border-bottom:none;
+}
+
+.account-menu li a i{
+    width:18px;
+    text-align:center;
+}
+
+.account-menu li a:hover,
+.account-menu li a.active{
+    background:#2563eb;
+    color:#fff;
+}
+
+/* =========================================================
+   ACCOUNT CONTENT
+========================================================= */
+
+.account-content{
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+}
+
+/* =========================================================
+   DASHBOARD CARDS
+========================================================= */
+
+.dashboard-cards{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.dashboard-card{
+    background:#fff;
+    padding:30px 20px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,.06);
+    transition:.3s;
+}
+
+.dashboard-card:hover{
+    transform:translateY(-6px);
+}
+
+.dashboard-card i{
+    font-size:34px;
+    color:#2563eb;
+    margin-bottom:15px;
+}
+
+.dashboard-card h3{
+    font-size:38px;
+    color:#111827;
+    margin-bottom:10px;
+}
+
+.dashboard-card p{
+    color:#6b7280;
+    font-size:15px;
+}
+
+/* =========================================================
+   RECENT ORDERS
+========================================================= */
+
+.recent-orders{
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.06);
+}
+
+.recent-orders h3{
+    font-size:30px;
+    margin-bottom:25px;
+    color:#111827;
+}
+
+.recent-orders table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.recent-orders thead{
+    background:#2563eb;
+}
+
+.recent-orders th{
+    padding:16px;
+    color:#fff;
+    text-align:left;
+    font-size:15px;
+}
+
+.recent-orders td{
+    padding:18px 16px;
+    border-bottom:1px solid #e5e7eb;
+    color:#374151;
+}
+
+.recent-orders tbody tr:hover{
+    background:#f8fafc;
+}
+
+.recent-orders a{
+    text-decoration:none;
+    color:#2563eb;
+    font-weight:600;
+}
+
+.recent-orders a:hover{
+    text-decoration:underline;
+}
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.status{
+    display:inline-block;
+    padding:6px 14px;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:600;
+}
+
+.status.processing{
+    background:#fef3c7;
+    color:#d97706;
+}
+
+.status.delivered{
+    background:#dcfce7;
+    color:#15803d;
+}
+
+.status.cancelled{
+    background:#fee2e2;
+    color:#dc2626;
+}
+
+/* =========================================================
+   ACCOUNT INFORMATION
+========================================================= */
+
+.account-info{
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.06);
+}
+
+.account-info h3{
+    font-size:30px;
+    color:#111827;
+    margin-bottom:25px;
+}
+
+.info-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+}
+
+.info-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+    border-bottom:1px solid #e5e7eb;
+}
+
+.info-item span{
+    color:#6b7280;
+}
+
+.info-item strong{
+    color:#111827;
+    font-weight:600;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media(max-width:992px){
+
+    .account-wrapper{
+        grid-template-columns:1fr;
+    }
+
+    .dashboard-cards{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .info-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media(max-width:768px){
+
+    .account{
+        padding:60px 0;
+    }
+
+    .account-header{
+        margin-bottom:35px;
+    }
+
+    .account-header h2{
+        font-size:32px;
+    }
+
+    .dashboard-cards{
+        grid-template-columns:1fr;
+    }
+
+    .recent-orders{
+        overflow-x:auto;
+    }
+
+    .recent-orders table{
+        min-width:700px;
+    }
+
+    .profile-box h3{
+        font-size:24px;
+    }
+
+    .info-item{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:8px;
+    }
+
+}

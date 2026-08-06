@@ -1,0 +1,130 @@
+/* =========================================================
+   PRIVACY POLICY
+========================================================= */
+
+.privacy-policy{
+    padding:80px 0;
+    background:#f5f7fb;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.privacy-header{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.privacy-header h2{
+    font-size:38px;
+    color:#222;
+    margin-bottom:15px;
+}
+
+.privacy-header p{
+    max-width:700px;
+    margin:auto;
+    color:#666;
+    line-height:1.8;
+}
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.privacy-content{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+}
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.privacy-card{
+    background:#fff;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+    border-left:5px solid #0d6efd;
+}
+
+.privacy-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+}
+
+.privacy-card h3{
+    font-size:22px;
+    color:#0d6efd;
+    margin-bottom:15px;
+}
+
+.privacy-card p{
+    color:#666;
+    line-height:1.9;
+    font-size:15px;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:992px){
+
+    .privacy-content{
+        grid-template-columns:1fr;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .privacy-policy{
+        padding:70px 0;
+    }
+
+    .privacy-header h2{
+        font-size:32px;
+    }
+
+    .privacy-card{
+        padding:25px;
+    }
+
+    .privacy-card h3{
+        font-size:20px;
+    }
+
+}
+
+@media(max-width:576px){
+
+    .privacy-policy{
+        padding:60px 0;
+    }
+
+    .privacy-header h2{
+        font-size:28px;
+    }
+
+    .privacy-header p{
+        font-size:15px;
+    }
+
+    .privacy-card{
+        padding:20px;
+    }
+
+    .privacy-card h3{
+        font-size:18px;
+    }
+
+    .privacy-card p{
+        font-size:14px;
+    }
+
+}

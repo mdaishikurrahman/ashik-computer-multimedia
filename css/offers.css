@@ -1,0 +1,174 @@
+/* =========================================================
+   OFFERS
+========================================================= */
+
+.offers{
+    padding:80px 0;
+    background:#f5f7fb;
+}
+
+/* =========================================================
+   OFFERS HEADER
+========================================================= */
+
+.offers-header{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.offers-header h2{
+    font-size:38px;
+    color:#222;
+    margin-bottom:15px;
+}
+
+.offers-header p{
+    max-width:700px;
+    margin:auto;
+    color:#666;
+    line-height:1.8;
+}
+
+/* =========================================================
+   OFFERS GRID
+========================================================= */
+
+.offers-wrapper{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+}
+
+/* =========================================================
+   OFFER CARD
+========================================================= */
+
+.offer-card{
+    background:#fff;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.35s;
+    text-align:center;
+    position:relative;
+}
+
+.offer-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+.offer-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+/* =========================================================
+   DISCOUNT BADGE
+========================================================= */
+
+.discount{
+    position:absolute;
+    top:15px;
+    left:15px;
+    background:#dc3545;
+    color:#fff;
+    padding:8px 15px;
+    border-radius:30px;
+    font-size:14px;
+    font-weight:700;
+}
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.offer-card h3{
+    margin:20px 0 10px;
+    font-size:22px;
+    color:#222;
+}
+
+.offer-card p{
+    color:#666;
+    line-height:1.7;
+    padding:0 20px;
+    min-height:65px;
+}
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.offer-card a{
+    display:inline-block;
+    margin:25px 0 30px;
+    padding:12px 28px;
+    background:#0d6efd;
+    color:#fff;
+    text-decoration:none;
+    border-radius:6px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.offer-card a:hover{
+    background:#084298;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:1200px){
+
+    .offers-wrapper{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+}
+
+@media(max-width:992px){
+
+    .offers{
+        padding:70px 0;
+    }
+
+    .offers-wrapper{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:768px){
+
+    .offers-header h2{
+        font-size:32px;
+    }
+
+}
+
+@media(max-width:576px){
+
+    .offers{
+        padding:60px 0;
+    }
+
+    .offers-header h2{
+        font-size:28px;
+    }
+
+    .offers-wrapper{
+        grid-template-columns:1fr;
+    }
+
+    .offer-card img{
+        height:200px;
+    }
+
+    .offer-card h3{
+        font-size:20px;
+    }
+
+}

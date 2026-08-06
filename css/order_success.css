@@ -1,0 +1,338 @@
+/* =========================================================
+   ORDER SUCCESS
+========================================================= */
+
+.order-success{
+    padding:80px 0;
+    background:#f8fafc;
+}
+
+/* =========================================================
+   SUCCESS HEADER
+========================================================= */
+
+.success-header{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.success-icon{
+    width:100px;
+    height:100px;
+    margin:0 auto 25px;
+    border-radius:50%;
+    background:#dcfce7;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.success-icon i{
+    font-size:55px;
+    color:#16a34a;
+}
+
+.success-header h2{
+    font-size:42px;
+    color:#111827;
+    margin-bottom:15px;
+}
+
+.success-header p{
+    max-width:700px;
+    margin:auto;
+    color:#6b7280;
+    font-size:18px;
+    line-height:1.8;
+}
+
+/* =========================================================
+   SUCCESS WRAPPER
+========================================================= */
+
+.success-wrapper{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:35px;
+    margin-bottom:45px;
+}
+
+/* =========================================================
+   SUCCESS CARD
+========================================================= */
+
+.success-card{
+    background:#fff;
+    border-radius:16px;
+    padding:35px;
+    box-shadow:0 8px 30px rgba(0,0,0,.06);
+    transition:.3s;
+}
+
+.success-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+}
+
+.success-card h3{
+    font-size:28px;
+    color:#111827;
+    margin-bottom:25px;
+    padding-bottom:15px;
+    border-bottom:1px solid #e5e7eb;
+}
+
+/* =========================================================
+   SUCCESS ITEM
+========================================================= */
+
+.success-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:16px 0;
+    border-bottom:1px solid #f1f5f9;
+}
+
+.success-item:last-child{
+    border-bottom:none;
+}
+
+.success-item span{
+    color:#6b7280;
+    font-size:16px;
+}
+
+.success-item strong{
+    color:#111827;
+    font-size:17px;
+    font-weight:600;
+    text-align:right;
+}
+
+.success-item.total{
+    margin-top:15px;
+    padding-top:20px;
+    border-top:2px solid #e5e7eb;
+}
+
+.success-item.total strong{
+    color:#2563eb;
+    font-size:24px;
+}
+
+/* =========================================================
+   ORDER ITEMS
+========================================================= */
+
+#order-items{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.order-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 0;
+    border-bottom:1px solid #e5e7eb;
+}
+
+.order-item:last-child{
+    border-bottom:none;
+}
+
+.order-item span:first-child{
+    color:#111827;
+    font-weight:600;
+}
+
+.order-item span:last-child{
+    color:#2563eb;
+    font-weight:700;
+}
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.success-buttons{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-bottom:40px;
+}
+
+.success-buttons a,
+.success-buttons button{
+
+    width:200px;
+    height:52px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:10px;
+
+    text-decoration:none;
+
+    font-size:16px;
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+/* Continue */
+
+.continue-btn{
+    background:#2563eb;
+    color:#fff;
+}
+
+.continue-btn:hover{
+    background:#1d4ed8;
+}
+
+/* Track */
+
+.track-btn{
+    background:#111827;
+    color:#fff;
+}
+
+.track-btn:hover{
+    background:#000;
+}
+
+/* Invoice */
+
+.invoice-btn{
+    background:#16a34a;
+    color:#fff;
+    border:none;
+}
+
+.invoice-btn:hover{
+    background:#15803d;
+}
+
+/* =========================================================
+   SUCCESS NOTE
+========================================================= */
+
+.success-note{
+    max-width:850px;
+    margin:auto;
+    background:#eff6ff;
+    border-left:5px solid #2563eb;
+    border-radius:10px;
+    padding:22px 25px;
+}
+
+.success-note p{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:12px;
+    color:#374151;
+    font-size:16px;
+    line-height:1.7;
+    text-align:center;
+}
+
+.success-note i{
+    color:#2563eb;
+    font-size:22px;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media(max-width:992px){
+
+    .order-success{
+        padding:70px 0;
+    }
+
+    .success-wrapper{
+        grid-template-columns:1fr;
+    }
+
+    .success-header h2{
+        font-size:36px;
+    }
+
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media(max-width:768px){
+
+    .order-success{
+        padding:60px 0;
+    }
+
+    .success-header{
+        margin-bottom:40px;
+    }
+
+    .success-icon{
+        width:80px;
+        height:80px;
+    }
+
+    .success-icon i{
+        font-size:42px;
+    }
+
+    .success-header h2{
+        font-size:30px;
+    }
+
+    .success-header p{
+        font-size:16px;
+    }
+
+    .success-card{
+        padding:25px;
+    }
+
+    .success-card h3{
+        font-size:24px;
+    }
+
+    .success-item{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:8px;
+    }
+
+    .success-item strong{
+        text-align:left;
+    }
+
+    .order-item{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:8px;
+    }
+
+    .success-buttons{
+        flex-direction:column;
+    }
+
+    .success-buttons a,
+    .success-buttons button{
+        width:100%;
+    }
+
+}

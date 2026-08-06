@@ -1,0 +1,123 @@
+/* =========================================================
+   SHOP PAGE RESPONSIVE
+========================================================= */
+
+@media (max-width:768px){
+
+    .shop-banner{
+        padding:60px 20px;
+    }
+
+    .shop-banner-content h1{
+        font-size:38px;
+    }
+
+    .shop-banner-content p{
+        font-size:16px;
+    }
+
+    .shop-products .container{
+        display:grid;
+        grid-template-columns:1fr;
+        gap:30px;
+    }
+
+    .shop-sidebar{
+        width:100%;
+        margin-bottom:20px;
+    }
+
+    .shop-content{
+        width:100%;
+    }
+
+    .shop-top{
+        display:flex;
+        flex-direction:column;
+        gap:20px;
+        text-align:center;
+    }
+
+    .shop-top select{
+        width:100%;
+    }
+
+    .products-grid{
+        display:grid;
+        grid-template-columns:repeat(2,1fr);
+        gap:20px;
+    }
+
+}
+
+/* =========================================================
+   PRODUCT DETAILS RESPONSIVE
+========================================================= */
+
+@media (max-width:992px){
+
+    .product-details-wrapper{
+        grid-template-columns:1fr;
+    }
+
+    .main-image{
+        height:420px;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .product-details{
+        padding:60px 0;
+    }
+
+    .product-gallery,
+    .product-info{
+        padding:20px;
+    }
+
+    .product-title{
+        font-size:28px;
+    }
+
+    .current-price{
+        font-size:28px;
+    }
+
+    .thumbnail-images{
+        flex-wrap:wrap;
+    }
+
+    .thumbnail-images img{
+        width:70px;
+        height:70px;
+    }
+
+    .quantity-box{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .product-buttons{
+        flex-direction:column;
+    }
+
+    .add-cart-btn,
+    .buy-btn{
+        width:100%;
+    }
+
+    .product-share{
+        flex-wrap:wrap;
+    }
+
+    .related-products{
+        padding:60px 0;
+    }
+
+    .related-products .section-title h2{
+        font-size:30px;
+    }
+
+}
