@@ -197,11 +197,9 @@
             <h2>Contact Ashik Computer & Multimedia</h2>
 
             <p>
-
                 We'd love to hear from you. Whether you have a question about
                 products, orders or technical support, our team is always
                 ready to help.
-
             </p>
 
         </div>
@@ -219,197 +217,178 @@
             <div class="contact-info">
 
                 <div class="contact-image">
-
                     <img
                         src="images/contact.jpeg"
-                        alt="Contact Ashik Computer & Multimedia">
-
+                        alt="Contact Ashik Computer & Multimedia"
+                        loading="lazy">
                 </div>
 
                 <h3>Get In Touch</h3>
 
                 <p>
-
                     We are committed to providing excellent customer service.
                     Feel free to contact us for product inquiries, technical
                     support or order assistance.
-
                 </p>
 
                 <ul>
 
                     <li>
-
-                        <i class="fa-solid fa-location-dot"></i>
-
-                        Meherpur, Bangladesh
-
+                        <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                        <span>Meherpur, Bangladesh</span>
                     </li>
 
                     <li>
-
-                        <i class="fa-solid fa-phone"></i>
-
-                        +880 1518404428
-
+                        <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                        <span>+880 1518404428</span>
                     </li>
 
                     <li>
-
-                        <i class="fa-solid fa-envelope"></i>
-
-                        ashikur199501@gmail.com
-
+                        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                        <span>ashikur199501@gmail.com</span>
                     </li>
 
                     <li>
-
-                        <i class="fa-solid fa-clock"></i>
-
-                        Sat - Thu : 9:00 AM - 9:00 PM
-
+                        <i class="fa-solid fa-clock" aria-hidden="true"></i>
+                        <span>Sat - Thu : 9:00 AM - 9:00 PM</span>
                     </li>
 
                 </ul>
 
             </div>
-<!-- ========================================================= -->
-<!-- CONTACT FORM -->
-<!-- ========================================================= -->
 
-<div class="contact-form-box">
+            <!-- ========================================================= -->
+            <!-- CONTACT FORM -->
+            <!-- ========================================================= -->
 
-    <h3>Send Us a Message</h3>
+            <div class="contact-form-box">
 
-    <form id="contactForm">
+                <h3>Send Us a Message</h3>
 
-        <!-- ========================================================= -->
-        <!-- FULL NAME -->
-        <!-- ========================================================= -->
+                <form id="contactForm">
 
-        <div class="form-group">
+                    <!-- FULL NAME -->
 
-            <label for="name">Full Name</label>
+                    <div class="form-group">
 
-            <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Enter your full name"
-                autocomplete="name"
-                required>
+                        <label for="name">Full Name</label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Enter your full name"
+                            autocomplete="name"
+                            required>
+
+                    </div>
+
+                    <!-- EMAIL -->
+
+                    <div class="form-group">
+
+                        <label for="email">Email Address</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email address"
+                            autocomplete="email"
+                            required>
+
+                    </div>
+
+                    <!-- PHONE -->
+
+                    <div class="form-group">
+
+                        <label for="phone">Phone Number</label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="+8801XXXXXXXXX"
+                            autocomplete="tel">
+
+                    </div>
+
+                    <!-- SUBJECT -->
+
+                    <div class="form-group">
+
+                        <label for="subject">Subject</label>
+
+                        <input
+                            type="text"
+                            id="subject"
+                            name="subject"
+                            placeholder="Enter subject"
+                            required>
+
+                    </div>
+
+                    <!-- MESSAGE -->
+
+                    <div class="form-group">
+
+                        <label for="message">Message</label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="6"
+                            maxlength="500"
+                            placeholder="Write your message here..."
+                            required></textarea>
+
+                        <small
+                            id="messageCount"
+                            class="message-counter">
+                            0 / 500
+                        </small>
+
+                    </div>
+
+                    <!-- SUBMIT BUTTON -->
+
+                    <button
+                        type="submit"
+                        class="contact-btn"
+                        id="submitBtn">
+
+                        <i
+                            class="fa-solid fa-paper-plane"
+                            aria-hidden="true"></i>
+
+                        <span>Send Message</span>
+
+                    </button>
+
+                    <!-- SUCCESS / ERROR MESSAGE -->
+
+                    <div
+                        id="contactMessage"
+                        class="form-message"
+                        role="alert"
+                        aria-live="polite">
+                    </div>
+
+                </form>
+
+            </div>
 
         </div>
+        <!-- CONTACT WRAPPER END -->
 
-        <!-- ========================================================= -->
-        <!-- EMAIL -->
-        <!-- ========================================================= -->
+    </div>
+    <!-- CONTACT CONTAINER END -->
 
-        <div class="form-group">
+</section>
+<!-- CONTACT END -->
 
-            <label for="email">Email Address</label>
 
-            <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Enter your email address"
-                autocomplete="email"
-                required>
-
-        </div>
-
-        <!-- ========================================================= -->
-        <!-- PHONE -->
-        <!-- ========================================================= -->
-
-        <div class="form-group">
-
-            <label for="phone">Phone Number</label>
-
-            <input
-                type="tel"
-                id="phone"
-                name="phone"
-                placeholder="+8801XXXXXXXXX"
-                autocomplete="tel">
-
-        </div>
-
-        <!-- ========================================================= -->
-        <!-- SUBJECT -->
-        <!-- ========================================================= -->
-
-        <div class="form-group">
-
-            <label for="subject">Subject</label>
-
-            <input
-                type="text"
-                id="subject"
-                name="subject"
-                placeholder="Enter subject"
-                required>
-
-        </div>
-
-        <!-- ========================================================= -->
-        <!-- MESSAGE -->
-        <!-- ========================================================= -->
-
-        <div class="form-group">
-
-            <label for="message">Message</label>
-
-            <textarea
-                id="message"
-                name="message"
-                rows="6"
-                maxlength="500"
-                placeholder="Write your message here..."
-                required></textarea>
-
-            <small
-                id="messageCount"
-                class="message-counter">
-
-                0 / 500
-
-            </small>
-
-        </div>
-
-        <!-- ========================================================= -->
-        <!-- SUBMIT BUTTON -->
-        <!-- ========================================================= -->
-
-        <button
-            type="submit"
-            class="contact-btn"
-            id="submitBtn">
-
-            <i class="fa-solid fa-paper-plane"></i>
-
-            <span>Send Message</span>
-
-        </button>
-
-        <!-- ========================================================= -->
-        <!-- SUCCESS / ERROR MESSAGE -->
-        <!-- ========================================================= -->
-
-        <div
-            id="contactMessage"
-            class="form-message">
-        </div>
-
-    </form>
-
-</div>
-
-<!-- ========================================================= -->
-<!-- CONTACT FORM END -->
-<!-- ========================================================= -->
 <!-- ========================================================= -->
 <!-- NEWSLETTER START -->
 <!-- ========================================================= -->
@@ -434,9 +413,11 @@
 
             <input
                 type="email"
+                name="newsletter-email"
                 placeholder="Enter your email address"
-                required
-            >
+                autocomplete="email"
+                aria-label="Email address"
+                required>
 
             <button type="submit">
                 Subscribe
@@ -447,11 +428,9 @@
     </div>
 
 </section>
-
-<!-- ========================================================= -->
 <!-- NEWSLETTER END -->
-<!-- ========================================================= -->
-    
+
+
 <!-- ========================================================= -->
 <!-- FOOTER START -->
 <!-- ========================================================= -->
@@ -460,202 +439,237 @@
 
     <div class="container">
 
+        <!-- ========================================================= -->
         <!-- COMPANY INFO -->
-        <div class="footer-box footer-about">
-    
-            <a href="index.html" class="footer-logo">
-                <i class="fa-solid fa-computer"></i>
-                <span>Ashik Computer & Multimedia</span>
-            </a>
-    
-            <p>
-                Your trusted destination for genuine laptops, desktop PCs,
-                gaming computers, printers, networking devices, CCTV systems
-                and computer accessories at competitive prices in Bangladesh.
-            </p>
-    
-            <div class="footer-contact-mini">
-                <p>
-                    <i class="fa-solid fa-location-dot"></i>
-                    Meherpur, Bangladesh
-                </p>
-    
-                <p>
-                    <i class="fa-solid fa-phone"></i>
-                    +880 1518404428
-                </p>
-    
-                <p>
-                    <i class="fa-solid fa-envelope"></i>
-                    ashikur199501@gmail.com
-                </p>
-            </div>
-    
-            <div class="social-links">
-    
-                <a href="https://www.facebook.com/"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   aria-label="Facebook">
-                    <i class="fa-brands fa-facebook-f"></i>
-                </a>
-    
-                <a href="https://www.instagram.com/"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   aria-label="Instagram">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-    
-                <a href="https://www.youtube.com/"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   aria-label="YouTube">
-                    <i class="fa-brands fa-youtube"></i>
-                </a>
-    
-                <a href="https://www.linkedin.com/in/ashikur-rahman-admin/"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   aria-label="LinkedIn">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                </a>
-    
-            </div>
-    
-        </div>
-    
-    
-        <!-- QUICK LINKS -->
+        <!-- ========================================================= -->
+
         <div class="footer-box">
-    
+
+            <a href="index.html" class="footer-logo">
+
+                <i
+                    class="fa-solid fa-computer"
+                    aria-hidden="true"></i>
+
+                <span>Ashik Computer & Multimedia</span>
+
+            </a>
+
+            <p>
+                Your trusted destination for laptops, desktops,
+                gaming PCs, printers, CCTV, networking devices,
+                and computer accessories at the best prices.
+            </p>
+
+            <div class="social-links">
+
+                <a href="#" aria-label="Facebook">
+                    <i
+                        class="fa-brands fa-facebook-f"
+                        aria-hidden="true"></i>
+                </a>
+
+                <a href="#" aria-label="Instagram">
+                    <i
+                        class="fa-brands fa-instagram"
+                        aria-hidden="true"></i>
+                </a>
+
+                <a href="#" aria-label="YouTube">
+                    <i
+                        class="fa-brands fa-youtube"
+                        aria-hidden="true"></i>
+                </a>
+
+                <a href="#" aria-label="LinkedIn">
+                    <i
+                        class="fa-brands fa-linkedin-in"
+                        aria-hidden="true"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- ========================================================= -->
+        <!-- QUICK LINKS -->
+        <!-- ========================================================= -->
+
+        <div class="footer-box">
+
             <h3>Quick Links</h3>
-    
+
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="categories.html">Categories</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="privacy_policy.html">Privacy Policy</a></li>
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="shop.html">Shop</a>
+                </li>
+
+                <li>
+                    <a href="categories.html">Categories</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About Us</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+
             </ul>
 
         </div>
-        
+
+        <!-- ========================================================= -->
         <!-- CATEGORIES -->
+        <!-- ========================================================= -->
+
         <div class="footer-box">
-    
-            <h3>Popular Categories</h3>
-    
+
+            <h3>Categories</h3>
+
             <ul>
-                <li><a href="#">Laptops</a></li>
-                <li><a href="#">Desktop PCs</a></li>
-                <li><a href="#">Gaming PCs</a></li>
-                <li><a href="#">Monitors</a></li>
-                <li><a href="#">Printers</a></li>
-                <li><a href="#">Accessories</a></li>
-                <li><a href="#">CCTV & Security</a></li>
+
+                <li>
+                    <a href="shop.html?category=laptop">
+                        Laptop
+                    </a>
+                </li>
+
+                <li>
+                    <a href="shop.html?category=desktop">
+                        Desktop PC
+                    </a>
+                </li>
+
+                <li>
+                    <a href="shop.html?category=gaming">
+                        Gaming PC
+                    </a>
+                </li>
+
+                <li>
+                    <a href="shop.html?category=printer">
+                        Printer
+                    </a>
+                </li>
+
+                <li>
+                    <a href="shop.html?category=accessories">
+                        Accessories
+                    </a>
+                </li>
+
             </ul>
-    
+
         </div>
-    
-    
-        <!-- CUSTOMER SERVICE -->
+
+        <!-- ========================================================= -->
+        <!-- CONTACT INFO -->
+        <!-- ========================================================= -->
+
         <div class="footer-box">
-    
-            <h3>Customer Service</h3>
-    
+
+            <h3>Contact Info</h3>
+
             <ul>
+
                 <li>
-                    <a href="#">
-                        <i class="fa-solid fa-truck"></i>
-                        Fast Delivery
-                    </a>
+                    <i
+                        class="fa-solid fa-location-dot"
+                        aria-hidden="true"></i>
+                    <span>Meherpur, Bangladesh</span>
                 </li>
-    
+
                 <li>
-                    <a href="#">
-                        <i class="fa-solid fa-shield-halved"></i>
-                        Secure Payment
-                    </a>
+                    <i
+                        class="fa-solid fa-phone"
+                        aria-hidden="true"></i>
+                    <span>+880 1518404428</span>
                 </li>
-    
+
                 <li>
-                    <a href="#">
-                        <i class="fa-solid fa-certificate"></i>
-                        Official Warranty
-                    </a>
+                    <i
+                        class="fa-solid fa-envelope"
+                        aria-hidden="true"></i>
+                    <span>ashikur199501@gmail.com</span>
                 </li>
-    
+
                 <li>
-                    <a href="#">
-                        <i class="fa-solid fa-rotate-left"></i>
-                        Easy Return Policy
-                    </a>
+                    <i
+                        class="fa-solid fa-clock"
+                        aria-hidden="true"></i>
+                    <span>Sat - Thu : 9:00 AM - 9:00 PM</span>
                 </li>
-    
-                <li>
-                    <a href="#">
-                        <i class="fa-solid fa-headset"></i>
-                        Customer Support
-                    </a>
-                </li>
+
             </ul>
-    
+
         </div>
-    
+
     </div>
-    
-    
-    <!-- PAYMENT -->
+    <!-- FOOTER MAIN CONTAINER END -->
+
+
+    <!-- ========================================================= -->
+    <!-- PAYMENT AREA -->
+    <!-- ========================================================= -->
+
     <div class="payment-area">
-    
-        <h4>
-            <i class="fa-solid fa-lock"></i>
-            Secure Payment Methods
-        </h4>
-    
+
+        <h4>We Accept</h4>
+
         <div class="payment-icons">
-    
-            <img src="images/payment/visa.png" alt="Visa">
-            <img src="images/payment/mastercard.png" alt="Mastercard">
-            <img src="images/payment/bkash.png" alt="bKash">
-            <img src="images/payment/nagad.png" alt="Nagad">
-            <img src="images/payment/rocket.png" alt="Rocket">
-    
+
+            <img
+                src="images/payment/visa.png"
+                alt="Visa"
+                loading="lazy">
+
+            <img
+                src="images/payment/mastercard.png"
+                alt="MasterCard"
+                loading="lazy">
+
+            <img
+                src="images/payment/bkash.png"
+                alt="bKash"
+                loading="lazy">
+
+            <img
+                src="images/payment/nagad.png"
+                alt="Nagad"
+                loading="lazy">
+
+            <img
+                src="images/payment/rocket.png"
+                alt="Rocket"
+                loading="lazy">
+
         </div>
-    
-        <p class="payment-note">
-            Payment methods shown for demonstration purposes only.
-        </p>
-    
+
     </div>
-    
-    
+
+
+    <!-- ========================================================= -->
     <!-- COPYRIGHT -->
+    <!-- ========================================================= -->
+
     <div class="copyright">
 
-    <p>
-        © 2026 <strong>Ashik Computer & Multimedia</strong>.
-        All Rights Reserved.
-    </p>
+        <p>
+            &copy; 2026 Aishikur Rahman. All Rights Reserved.
+        </p>
 
-    <p>
-        Designed & Developed by
-        <a href="https://www.linkedin.com/in/ashikur-rahman-admin/"
-           target="_blank"
-           rel="noopener noreferrer">
-            <strong>Ashikur Rahman</strong>
-        </a>
-    </p>
+    </div>
 
-</div>
 </footer>
-
-<!-- ========================================================= -->
 <!-- FOOTER END -->
-<!-- ========================================================= -->
+
     <!-- JavaScript -->
     
     <script src="js/script.js"></script>
