@@ -1,4 +1,116 @@
 /* =========================================================
+   HOME PAGE RESPONSIVE
+   ========================================================= */
+
+/* ---------- HOME TABLET ---------- */
+@media (max-width: 992px) {
+
+    /* Features */
+    .features .container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    /* Featured Products */
+    .featured-products .container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    /* New Arrivals */
+    .new-arrivals .container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    /* Featured Brands */
+    .brands-wrapper {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+}
+
+
+/* ---------- HOME MOBILE ---------- */
+@media (max-width: 768px) {
+
+    /* Features */
+    .features .container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    /* Featured Products */
+    .featured-products .container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* New Arrivals */
+    .new-arrivals .container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* Featured Brands */
+    .brands-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    /* Home banners */
+    .banner-row {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .small-banner-row {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* Home Hero */
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero-image img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+/* ---------- HOME SMALL MOBILE ---------- */
+@media (max-width: 480px) {
+
+    .features .container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .featured-products .container,
+    .new-arrivals .container {
+        grid-template-columns: 1fr;
+    }
+
+    .brands-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+}
+
+
+/* =========================================================
    SHOP PAGE RESPONSIVE
 ========================================================= */
 
