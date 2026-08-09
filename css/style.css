@@ -1276,204 +1276,487 @@ ul{
    NEWSLETTER END
 ============================================================ */
 
-/* ============================================================
+/* =========================================================
    FOOTER START
-============================================================ */
+========================================================= */
 
-.footer{
-    background:#111827;
-    color:#d1d5db;
-    padding:90px 0 0;
+.footer {
+    background: #111827;
+    color: #d1d5db;
+    padding: 90px 0 0;
 }
 
-.footer .container{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:50px;
+.footer .container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 45px;
 }
 
-/* ==========================
-   Footer Logo
-========================== */
 
-.footer-logo{
-    display:flex;
-    align-items:center;
-    gap:12px;
-    margin-bottom:20px;
-    text-decoration:none;
+/* =========================================================
+   FOOTER LOGO
+========================================================= */
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 22px;
+    text-decoration: none;
 }
 
-.footer-logo i{
-    font-size:40px;
-    color:#2563eb;
+.footer-logo i {
+    font-size: 40px;
+    color: #2563eb;
+    transition: .3s;
 }
 
-.footer-logo span{
-    font-size:24px;
-    font-weight:700;
-    color:#fff;
-    line-height:1.3;
+.footer-logo span {
+    font-size: 23px;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.3;
 }
 
-/* ==========================
-   Company Description
-========================== */
-
-.footer-box p{
-    font-size:15px;
-    line-height:2;
-    color:#9ca3af;
-    margin-bottom:25px;
+.footer-logo:hover i {
+    transform: rotate(-5deg) scale(1.05);
 }
 
-/* ==========================
-   Footer Heading
-========================== */
 
-.footer-box h3{
-    color:#fff;
-    font-size:24px;
-    font-weight:700;
-    margin-bottom:28px;
-    position:relative;
+/* =========================================================
+   COMPANY DESCRIPTION
+========================================================= */
+
+.footer-box > p {
+    font-size: 15px;
+    line-height: 1.9;
+    color: #9ca3af;
+    margin-bottom: 22px;
+    max-width: 430px;
 }
 
-.footer-box h3::after{
-    content:"";
-    position:absolute;
-    left:0;
-    bottom:-8px;
-    width:55px;
-    height:3px;
-    background:#2563eb;
-    border-radius:20px;
+
+/* =========================================================
+   MINI CONTACT INFO
+========================================================= */
+
+.footer-contact-mini {
+    margin-top: 20px;
+    margin-bottom: 25px;
 }
 
-/* ==========================
-   Footer Lists
-========================== */
+.footer-contact-mini p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 
-.footer-box ul{
-    list-style:none;
-    padding:0;
-    margin:0;
+    color: #d1d5db;
+    font-size: 14px;
+    margin-bottom: 10px;
 }
 
-.footer-box ul li{
-    margin-bottom:15px;
+.footer-contact-mini p i {
+    width: 18px;
+    color: #2563eb;
+    text-align: center;
 }
 
-.footer-box ul li i{
-    width:18px;
-    color:#2563eb;
-    margin-right:10px;
+
+/* =========================================================
+   FOOTER HEADING
+========================================================= */
+
+.footer-box h3 {
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: 700;
+
+    margin-bottom: 28px;
+    position: relative;
 }
 
-.footer-box ul li a{
-    color:#d1d5db;
-    text-decoration:none;
-    transition:.3s;
+.footer-box h3::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: -9px;
+
+    width: 50px;
+    height: 3px;
+
+    background: #2563eb;
+    border-radius: 20px;
 }
 
-.footer-box ul li a:hover{
-    color:#2563eb;
-    padding-left:8px;
+
+/* =========================================================
+   FOOTER LIST
+========================================================= */
+
+.footer-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-/* ==========================
-   Social Icons
-========================== */
-
-.social-links{
-    display:flex;
-    gap:15px;
-    margin-top:25px;
+.footer-box ul li {
+    margin-bottom: 14px;
 }
 
-.social-links a{
-    width:48px;
-    height:48px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    background:#1f2937;
-    color:#fff;
-    border-radius:50%;
-    font-size:20px;
-    transition:.35s;
-    text-decoration:none;
+.footer-box ul li a {
+    display: inline-flex;
+    align-items: center;
+
+    color: #d1d5db;
+    text-decoration: none;
+
+    font-size: 15px;
+
+    transition: .3s;
 }
 
-.social-links a:hover{
-    background:#2563eb;
-    transform:translateY(-6px);
+.footer-box ul li a:hover {
+    color: #2563eb;
+    padding-left: 7px;
 }
 
-/* ==========================
-   Payment Area
-========================== */
 
-.payment-area{
-    margin-top:70px;
-    padding:40px 0;
-    border-top:1px solid rgba(255,255,255,.08);
-    text-align:center;
+/* =========================================================
+   LIST ICONS
+========================================================= */
+
+.footer-box ul li a i {
+    width: 20px;
+    margin-right: 9px;
+
+    color: #2563eb;
 }
 
-.payment-area h4{
-    color:#fff;
-    font-size:26px;
-    margin-bottom:25px;
+
+/* =========================================================
+   SOCIAL ICONS
+========================================================= */
+
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 25px;
 }
 
-.payment-icons{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    flex-wrap:wrap;
-    gap:18px;
+.social-links a {
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #1f2937;
+    color: #ffffff;
+
+    border: 1px solid rgba(255,255,255,.06);
+    border-radius: 50%;
+
+    font-size: 18px;
+
+    transition: .35s;
+
+    text-decoration: none;
 }
 
-.payment-icons img{
-    width:80px;
-    height:50px;
-    object-fit:contain;
-    background:#fff;
-    padding:8px 12px;
-    border:1px solid #e5e7eb;
-    border-radius:8px;
-    transition:.35s;
+.social-links a:hover {
+    background: #2563eb;
+    border-color: #2563eb;
+
+    transform: translateY(-5px);
 }
 
-.payment-icons img:hover{
-    transform:translateY(-5px);
-    border-color:#2563eb;
-    box-shadow:0 10px 22px rgba(0,0,0,.18);
+
+/* =========================================================
+   PAYMENT AREA
+========================================================= */
+
+.payment-area {
+    margin-top: 65px;
+
+    padding: 40px 15px;
+
+    border-top: 1px solid rgba(255,255,255,.08);
+
+    text-align: center;
 }
 
-/* ==========================
-   Copyright
-========================== */
+.payment-area h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
 
-.copyright{
-    background:#0b1120;
-    border-top:1px solid rgba(255,255,255,.08);
-    padding:20px 15px;
-    text-align:center;
+    color: #ffffff;
+
+    font-size: 22px;
+
+    margin-bottom: 25px;
 }
 
-.copyright p{
-    color:#9ca3af;
-    font-size:15px;
-    margin:0;
-    letter-spacing:.3px;
+.payment-area h4 i {
+    color: #2563eb;
+}
+
+
+/* =========================================================
+   PAYMENT ICONS
+========================================================= */
+
+.payment-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+}
+
+.payment-icons img {
+    width: 78px;
+    height: 48px;
+
+    object-fit: contain;
+
+    background: #ffffff;
+
+    padding: 7px 10px;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 8px;
+
+    transition: .35s;
+}
+
+.payment-icons img:hover {
+    transform: translateY(-5px);
+
+    border-color: #2563eb;
+
+    box-shadow: 0 10px 22px rgba(0,0,0,.18);
+}
+
+
+/* =========================================================
+   PAYMENT NOTE
+========================================================= */
+
+.payment-note {
+    margin-top: 15px;
+
+    color: #6b7280;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   COPYRIGHT
+========================================================= */
+
+.copyright {
+    background: #0b1120;
+
+    border-top: 1px solid rgba(255,255,255,.08);
+
+    padding: 20px 15px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+.copyright p {
+    color: #9ca3af;
+
+    font-size: 14px;
+
+    margin: 0;
+
+    letter-spacing: .2px;
+}
+
+.copyright a {
+    color: #2563eb;
+
+    text-decoration: none;
+
+    transition: .3s;
+}
+
+.copyright a:hover {
+    color: #60a5fa;
+}
+
+
+/* =========================================================
+   FOOTER RESPONSIVE
+========================================================= */
+
+@media (max-width: 992px) {
+
+    .footer {
+        padding-top: 70px;
+    }
+
+    .footer .container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px 30px;
+    }
+
+    .footer-about {
+        grid-column: 1 / -1;
+    }
+
+    .footer-box > p {
+        max-width: 650px;
+    }
+
+}
+
+
+/* =========================================================
+   FOOTER MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .footer {
+        padding-top: 60px;
+    }
+
+    .footer .container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+
+        text-align: center;
+    }
+
+    .footer-about {
+        grid-column: auto;
+    }
+
+    .footer-logo {
+        justify-content: center;
+    }
+
+    .footer-box > p {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer-contact-mini {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-contact-mini p {
+        justify-content: center;
+    }
+
+    .footer-box h3::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .footer-box ul li a {
+        justify-content: center;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .payment-area {
+        margin-top: 45px;
+        padding: 35px 15px;
+    }
+
+    .copyright {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 20px 15px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .footer {
+        padding-top: 50px;
+    }
+
+    .footer-logo span {
+        font-size: 19px;
+    }
+
+    .footer-logo i {
+        font-size: 34px;
+    }
+
+    .footer-box h3 {
+        font-size: 19px;
+    }
+
+    .footer-box > p {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .footer-contact-mini p {
+        font-size: 13px;
+    }
+
+    .social-links a {
+        width: 42px;
+        height: 42px;
+        font-size: 17px;
+    }
+
+    .payment-area h4 {
+        font-size: 19px;
+    }
+
+    .payment-icons {
+        gap: 10px;
+    }
+
+    .payment-icons img {
+        width: 68px;
+        height: 44px;
+    }
+
+    .copyright p {
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
 }
 
 /* ============================================================
    FOOTER END
 ============================================================ */
-
 
 /* ==========================================================
    SHOP PRODUCTS
