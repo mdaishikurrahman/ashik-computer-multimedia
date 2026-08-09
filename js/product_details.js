@@ -23,10 +23,10 @@ document.addEventListener("DOMContentLoaded", function () {
             category: "Laptop",
 
             images: [
-                "images/products/Laptop-4.jpeg",
-                "images/products/Laptop-1.jpeg",
-                "images/products/Laptop-2.jpeg",
-                "images/products/Laptop-3.jpeg"
+                "images/products/Asus Laptop-4.jpeg",
+                "images/products/Asus Laptop-1.jpeg",
+                "images/products/Asus Laptop-2.jpeg",
+                "images/products/Asus Laptop-3.jpeg"
             ],
 
             price: "৳73,900",
@@ -65,10 +65,10 @@ document.addEventListener("DOMContentLoaded", function () {
             category: "Laptop",
 
             images: [
-                "images/products/Laptop-1.jpeg",
-                "images/products/Laptop-2.jpeg",
-                "images/products/Laptop-3.jpeg",
-                "images/products/Laptop-4.jpeg"
+                "images/products/Dell Laptop-1.jpeg",
+                "images/products/Dell Laptop-2.jpeg",
+                "images/products/Dell Laptop-3.jpeg",
+                "images/products/Dell Laptop-4.jpeg"
             ],
 
             price: "৳89,900",
@@ -107,10 +107,10 @@ document.addEventListener("DOMContentLoaded", function () {
             category: "Laptop",
 
             images: [
-                "images/products/Laptop-2.jpeg",
-                "images/products/Laptop-1.jpeg",
-                "images/products/Laptop-3.jpeg",
-                "images/products/Laptop-4.jpeg"
+                "images/products/Hp Laptop-2.jpeg",
+                "images/products/Hp Laptop-1.jpeg",
+                "images/products/Hp Laptop-3.jpeg",
+                "images/products/Hp Laptop-4.jpeg"
             ],
 
             price: "৳78,500",
@@ -149,10 +149,10 @@ document.addEventListener("DOMContentLoaded", function () {
             category: "Laptop",
 
             images: [
-                "images/products/Laptop-3.jpeg",
-                "images/products/Laptop-1.jpeg",
-                "images/products/Laptop-2.jpeg",
-                "images/products/Laptop-4.jpeg"
+                "images/products/Lenovo Laptop-3.jpeg",
+                "images/products/Lenovo Laptop-1.jpeg",
+                "images/products/Lenovo Laptop-2.jpeg",
+                "images/products/Lenovo Laptop-4.jpeg"
             ],
 
             price: "৳82,900",
@@ -191,10 +191,10 @@ document.addEventListener("DOMContentLoaded", function () {
             category: "Laptop",
 
             images: [
-                "images/products/Laptop-5.jpeg",
-                "images/products/Laptop-1.jpeg",
-                "images/products/Laptop-2.jpeg",
-                "images/products/Laptop-3.jpeg"
+                "images/products/Acer Laptop-1.jpeg",
+                "images/products/Acer Laptop-4.jpeg",
+                "images/products/Acer Laptop-2.jpeg",
+                "images/products/Acer Laptop-3.jpeg"
             ],
 
             price: "৳69,900",
