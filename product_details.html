@@ -176,100 +176,151 @@
 <!-- NAVIGATION END -->
 <!-- ========================================================= -->
    
-<!-- ========================================================= -->
-<!-- PRODUCT BANNER START -->
-<!-- ========================================================= -->
+<!-- =========================================================
+     PRODUCT DETAILS BANNER / BREADCRUMB
+========================================================= -->
 
-<section class="shop-banner">
+<div class="container">
 
-    <div class="container">
+    <div class="shop-banner-content">
 
-        <div class="shop-banner-content">
+        <!-- Page title -->
 
-            <h1>Product Details</h1>
+        <h1>
+            Product Details
+        </h1>
 
-            <p>
 
-                <a href="index.html">Home</a>
+        <!-- Breadcrumb -->
 
-                <span>/</span>
+        <p>
 
-                <a href="shop.html">Shop</a>
+            <!-- Home -->
 
-                <span>/</span>
+            <a href="index.html">
+                Home
+            </a>
 
+            <span>/</span>
+
+
+            <!-- Shop -->
+
+            <a href="shop.html">
+                Shop
+            </a>
+
+            <span>/</span>
+
+
+            <!-- Current product -->
+
+            <span>
                 Dell Inspiron 15 Laptop
+            </span>
 
-            </p>
-
-        </div>
+        </p>
 
     </div>
 
-</section>
+</div>
 
-<!-- ========================================================= -->
-<!-- PRODUCT BANNER END -->
-<!-- ========================================================= -->
 
-<!-- ========================================================= -->
-<!-- PRODUCT DETAILS START -->
-<!-- ========================================================= -->
+<!-- =========================================================
+     PRODUCT DETAILS SECTION
+========================================================= -->
 
-<section class="product-details">
+<section class="product_details">
 
     <div class="container">
 
-        <div class="product-details-wrapper">
+        <div class="product_details_wrapper">
 
-            <!-- Product Gallery -->
+
+            <!-- =================================================
+                 PRODUCT IMAGE GALLERY
+            ================================================== -->
 
             <div class="product-gallery">
 
+                <!-- Main product image -->
+
                 <div class="main-image">
 
-                    <img src="images/products/Laptop-1.jpeg"
-                         alt="Dell Inspiron 15 Laptop"
-                         loading="lazy">
+                    <img
+                        id="mainProductImage"
+                        src="images/products/Laptop-1.jpeg"
+                        alt="Dell Inspiron 15 Laptop">
 
                 </div>
 
+
+                <!-- Product thumbnails -->
+
                 <div class="thumbnail-images">
 
-                    <img class="active"
-                         src="images/products/Laptop-1.jpeg"
-                         alt="Dell Inspiron 15 Front View"
-                         loading="lazy">
+                    <!-- Thumbnail 01 -->
 
-                    <img src="images/products/Laptop-2.jpeg"
-                         alt="Dell Inspiron 15 Side View"
-                         loading="lazy">
+                    <img
+                        class="active"
+                        src="images/products/Laptop-1.jpeg"
+                        alt="Dell Inspiron 15 Laptop Front View"
+                        data-image="images/products/Laptop-1.jpeg"
+                        loading="lazy">
 
-                    <img src="images/products/Laptop-3.jpeg"
-                         alt="Dell Inspiron 15 Keyboard"
-                         loading="lazy">
 
-                    <img src="images/products/Laptop-4.jpeg"
-                         alt="Dell Inspiron 15 Back View"
-                         loading="lazy">
+                    <!-- Thumbnail 02 -->
+
+                    <img
+                        src="images/products/Laptop-2.jpeg"
+                        alt="Dell Inspiron 15 Laptop Side View"
+                        data-image="images/products/Laptop-2.jpeg"
+                        loading="lazy">
+
+
+                    <!-- Thumbnail 03 -->
+
+                    <img
+                        src="images/products/Laptop-3.jpeg"
+                        alt="Dell Inspiron 15 Laptop Keyboard View"
+                        data-image="images/products/Laptop-3.jpeg"
+                        loading="lazy">
+
+
+                    <!-- Thumbnail 04 -->
+
+                    <img
+                        src="images/products/Laptop-4.jpeg"
+                        alt="Dell Inspiron 15 Laptop Back View"
+                        data-image="images/products/Laptop-4.jpeg"
+                        loading="lazy">
 
                 </div>
 
             </div>
 
-            <!-- Product Information -->
+
+            <!-- =================================================
+                 PRODUCT INFORMATION
+            ================================================== -->
 
             <div class="product-info">
+
+                <!-- Category -->
 
                 <span class="product-category">
                     Laptop
                 </span>
 
+
+                <!-- Product title -->
+
                 <h2 class="product-title">
                     Dell Inspiron 15 Laptop
                 </h2>
 
-                <!-- Rating -->
+
+                <!-- Product rating -->
 
                 <div class="product-rating">
 
@@ -283,11 +334,14 @@
 
                     </div>
 
-                    <span>(24 Reviews)</span>
+                    <span>
+                        (24 Reviews)
+                    </span>
 
                 </div>
 
-                <!-- Price -->
+
+                <!-- Product price -->
 
                 <div class="product-price">
 
@@ -305,39 +359,73 @@
 
                 </div>
 
-                <!-- Description -->
+
+                <!-- Product description -->
 
                 <p class="product-description">
 
-                    Dell Inspiron 15 Laptop features an Intel Core i7 Processor,
-                    16GB DDR4 RAM, 512GB NVMe SSD, 15.6-inch Full HD Display,
-                    Windows 11, premium slim design, suitable for office,
-                    programming, graphics and everyday multitasking.
+                    Dell Inspiron 15 Laptop features an Intel Core i7
+                    Processor, 16GB DDR4 RAM, 512GB NVMe SSD and
+                    15.6-inch Full HD Display.
+
+                    It is suitable for office work, programming,
+                    graphics design, multimedia and everyday
+                    multitasking.
 
                 </p>
 
-                <!-- Product Meta -->
+
+                <!-- Product meta -->
 
                 <div class="product-meta">
 
                     <p>
-                        <strong>Brand :</strong> Dell
+
+                        <strong>
+                            Brand:
+                        </strong>
+
+                        Dell
+
                     </p>
 
-                    <p>
-                        <strong>Model :</strong> Inspiron 15
-                    </p>
 
                     <p>
-                        <strong>SKU :</strong> DELL-I15-001
+
+                        <strong>
+                            Model:
+                        </strong>
+
+                        Inspiron 15
+
                     </p>
 
+
                     <p>
-                        <strong>Availability :</strong>
-                        <span class="stock">In Stock</span>
+
+                        <strong>
+                            SKU:
+                        </strong>
+
+                        DELL-I15-001
+
+                    </p>
+
+
+                    <p>
+
+                        <strong>
+                            Availability:
+                        </strong>
+
+                        <span class="stock">
+                            In Stock
+                        </span>
+
                     </p>
 
                 </div>
+
 
                 <!-- Quantity -->
 
@@ -349,57 +437,90 @@
 
                     <div class="quantity-control">
 
+                        <!-- Decrease quantity -->
+
                         <button
                             type="button"
-                            id="minus-btn">
-                            -
+                            id="minus-btn"
+                            aria-label="Decrease quantity">
+
+                            −
+
                         </button>
+
+
+                        <!-- Quantity input -->
 
                         <input
                             id="quantity"
                             type="number"
                             value="1"
-                            min="1">
+                            min="1"
+                            max="99"
+                            aria-label="Product quantity">
+
+
+                        <!-- Increase quantity -->
 
                         <button
                             type="button"
-                            id="plus-btn">
+                            id="plus-btn"
+                            aria-label="Increase quantity">
+
                             +
+
                         </button>
 
                     </div>
 
                 </div>
 
-                <!-- Buttons -->
+
+                <!-- Product action buttons -->
 
                 <div class="product-buttons">
 
+                    <!-- Add to cart -->
+
                     <button
                         type="button"
-                        class="add-cart-btn">
+                        class="add-cart-btn"
+                        id="addCartBtn">
 
                         <i class="fa-solid fa-cart-shopping"></i>
 
-                        Add to Cart
+                        <span>
+                            Add to Cart
+                        </span>
 
                     </button>
 
+
+                    <!-- Buy now -->
+
                     <button
                         type="button"
-                        class="buy-btn">
+                        class="buy-btn"
+                        id="buyNowBtn">
 
-                        Buy Now
+                        <i class="fa-solid fa-bolt"></i>
+
+                        <span>
+                            Buy Now
+                        </span>
 
                     </button>
 
                 </div>
 
+
                 <!-- Wishlist -->
 
                 <div class="wishlist">
 
-                    <a href="#">
+                    <a
+                        href="#"
+                        id="wishlistBtn">
 
                         <i class="fa-regular fa-heart"></i>
 
@@ -409,26 +530,57 @@
 
                 </div>
 
-                <!-- Share -->
+
+                <!-- Social share -->
 
                 <div class="product-share">
 
-                    <span>Share :</span>
+                    <span>
+                        Share:
+                    </span>
 
-                    <a href="#">
+
+                    <!-- Facebook -->
+
+                    <a
+                        href="#"
+                        aria-label="Share on Facebook">
+
                         <i class="fa-brands fa-facebook-f"></i>
+
                     </a>
 
-                    <a href="#">
+
+                    <!-- X -->
+
+                    <a
+                        href="#"
+                        aria-label="Share on X">
+
                         <i class="fa-brands fa-x-twitter"></i>
+
                     </a>
 
-                    <a href="#">
+
+                    <!-- LinkedIn -->
+
+                    <a
+                        href="#"
+                        aria-label="Share on LinkedIn">
+
                         <i class="fa-brands fa-linkedin-in"></i>
+
                     </a>
 
-                    <a href="#">
+
+                    <!-- WhatsApp -->
+
+                    <a
+                        href="#"
+                        aria-label="Share on WhatsApp">
+
                         <i class="fa-brands fa-whatsapp"></i>
+
                     </a>
 
                 </div>
@@ -441,344 +593,250 @@
 
 </section>
 
-<!-- ========================================================= -->
-<!-- PRODUCT DETAILS END -->
-<!-- ========================================================= -->
 
-<!-- ========================================================= -->
-<!-- RELATED PRODUCTS START -->
-<!-- ========================================================= -->
+<!-- =========================================================
+     PRODUCT TABS SECTION
+========================================================= -->
 
-<section class="related-products">
+<section class="product_tabs">
 
     <div class="container">
 
-        <div class="section-title">
 
-            <h2>Related Products</h2>
-
-            <p>
-                Explore more laptops and accessories that match your needs.
-            </p>
-
-        </div>
-
-        <div class="products-grid">
-
-            <!-- Product 1 -->
-
-            <div class="product-card">
-
-                <div class="product-image">
-
-                    <span class="badge">-10%</span>
-
-                    <a href="product_details.html">
-                        <img src="images/products/Laptop-1.jpeg"
-                             alt="Dell Inspiron 15"
-                             loading="lazy">
-                    </a>
-
-                </div>
-
-                <div class="product-content">
-
-                    <span class="product-category">
-                        Laptop
-                    </span>
-
-                    <h3>
-                        <a href="product_details.html">
-                            Dell Inspiron 15 Laptop
-                        </a>
-                    </h3>
-
-                    <div class="product-rating">
-
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-
-                    </div>
-
-                    <div class="product-price">
-
-                        <span class="current-price">
-                            ৳89,900
-                        </span>
-
-                        <span class="old-price">
-                            ৳95,000
-                        </span>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- Product 2 -->
-
-            <div class="product-card">
-
-                <div class="product-image">
-
-                    <span class="badge">Hot</span>
-
-                    <a href="product_details.html">
-                        <img src="images/products/Laptop-2.jpeg"
-                             alt="HP Pavilion 15"
-                             loading="lazy">
-                    </a>
-
-                </div>
-
-                <div class="product-content">
-
-                    <span class="product-category">
-                        Laptop
-                    </span>
-
-                    <h3>
-                        <a href="product_details.html">
-                            HP Pavilion 15
-                        </a>
-                    </h3>
-
-                    <div class="product-rating">
-
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-
-                    </div>
-
-                    <div class="product-price">
-
-                        <span class="current-price">
-                            ৳84,500
-                        </span>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- Product 3 -->
-
-            <div class="product-card">
-
-                <div class="product-image">
-
-                    <span class="badge">-15%</span>
-
-                    <a href="product_details.html">
-                        <img src="images/products/Laptop-3.jpeg"
-                             alt="Lenovo IdeaPad Slim 5"
-                             loading="lazy">
-                    </a>
-
-                </div>
-
-                <div class="product-content">
-
-                    <span class="product-category">
-                        Laptop
-                    </span>
-
-                    <h3>
-                        <a href="product_details.html">
-                            Lenovo IdeaPad Slim 5
-                        </a>
-                    </h3>
-
-                    <div class="product-rating">
-
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-
-                    </div>
-
-                    <div class="product-price">
-
-                        <span class="current-price">
-                            ৳79,900
-                        </span>
-
-                        <span class="old-price">
-                            ৳84,900
-                        </span>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- Product 4 -->
-
-            <div class="product-card">
-
-                <div class="product-image">
-
-                    <span class="badge">New</span>
-
-                    <a href="product_details.html">
-                        <img src="images/products/Laptop-4.jpeg"
-                             alt="ASUS VivoBook 15"
-                             loading="lazy">
-                    </a>
-
-                </div>
-
-                <div class="product-content">
-
-                    <span class="product-category">
-                        Laptop
-                    </span>
-
-                    <h3>
-                        <a href="product_details.html">
-                            ASUS VivoBook 15
-                        </a>
-                    </h3>
-
-                    <div class="product-rating">
-
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-
-                    </div>
-
-                    <div class="product-price">
-
-                        <span class="current-price">
-                            ৳74,900
-                        </span>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ========================================================= -->
-<!-- RELATED PRODUCTS END -->
-<!-- ========================================================= -->
-
-
-<!-- ========================================================= -->
-<!-- PRODUCT TABS START -->
-<!-- ========================================================= -->
-
-<section class="product-tabs">
-
-    <div class="container">
+        <!-- =================================================
+             TAB BUTTONS
+        ================================================== -->
 
         <div class="tabs-header">
 
-            <button class="tab-btn active">
+            <!-- Description -->
+
+            <button
+                type="button"
+                class="tab-btn active"
+                data-tab="description">
+
                 Description
+
             </button>
 
-            <button class="tab-btn">
+
+            <!-- Specification -->
+
+            <button
+                type="button"
+                class="tab-btn"
+                data-tab="specification">
+
                 Specification
+
             </button>
 
-            <button class="tab-btn">
+
+            <!-- Reviews -->
+
+            <button
+                type="button"
+                class="tab-btn"
+                data-tab="reviews">
+
                 Reviews (24)
+
             </button>
 
         </div>
 
+
+        <!-- =================================================
+             TAB CONTENT
+        ================================================== -->
+
         <div class="tab-content">
 
-            <div class="tab-box">
 
-                <h3>Product Description</h3>
+            <!-- =================================================
+                 DESCRIPTION TAB
+            ================================================== -->
+
+            <div
+                class="tab-box active"
+                id="description">
+
+                <h3>
+                    Product Description
+                </h3>
+
 
                 <p>
-                    Dell Inspiron 15 Laptop is powered by the latest Intel Core i7
-                    Processor with 16GB DDR4 RAM and 512GB NVMe SSD for smooth
-                    multitasking and high-speed performance.
+
+                    Dell Inspiron 15 Laptop is powered by the latest
+                    Intel Core i7 Processor with 16GB DDR4 RAM and
+                    512GB NVMe SSD for smooth multitasking and
+                    high-speed performance.
+
                 </p>
 
+
                 <p>
-                    The 15.6-inch Full HD display provides clear visuals, making it
-                    suitable for office work, programming, graphics design,
-                    multimedia, and entertainment.
+
+                    The 15.6-inch Full HD display provides clear
+                    visuals, making it suitable for office work,
+                    programming, graphics design, multimedia and
+                    entertainment.
+
                 </p>
 
             </div>
 
-            <div class="tab-box">
 
-                <h3>Technical Specifications</h3>
+            <!-- =================================================
+                 SPECIFICATION TAB
+            ================================================== -->
 
-                <table class="spec-table">
+            <div
+                class="tab-box"
+                id="specification">
 
-                    <tr>
-                        <th>Processor</th>
-                        <td>Intel Core i7 13th Gen</td>
-                    </tr>
+                <h3>
+                    Technical Specifications
+                </h3>
 
-                    <tr>
-                        <th>RAM</th>
-                        <td>16GB DDR4</td>
-                    </tr>
 
-                    <tr>
-                        <th>Storage</th>
-                        <td>512GB NVMe SSD</td>
-                    </tr>
+                <div class="spec-table-wrapper">
 
-                    <tr>
-                        <th>Display</th>
-                        <td>15.6" Full HD IPS</td>
-                    </tr>
+                    <table class="spec-table">
 
-                    <tr>
-                        <th>Graphics</th>
-                        <td>Intel Iris Xe Graphics</td>
-                    </tr>
+                        <tbody>
 
-                    <tr>
-                        <th>Operating System</th>
-                        <td>Windows 11</td>
-                    </tr>
+                            <tr>
 
-                </table>
+                                <th>
+                                    Processor
+                                </th>
+
+                                <td>
+                                    Intel Core i7 13th Gen
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <th>
+                                    RAM
+                                </th>
+
+                                <td>
+                                    16GB DDR4
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <th>
+                                    Storage
+                                </th>
+
+                                <td>
+                                    512GB NVMe SSD
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <th>
+                                    Display
+                                </th>
+
+                                <td>
+                                    15.6" Full HD IPS
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <th>
+                                    Graphics
+                                </th>
+
+                                <td>
+                                    Intel Iris Xe Graphics
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <th>
+                                    Operating System
+                                </th>
+
+                                <td>
+                                    Windows 11
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
 
             </div>
 
-            <div class="tab-box">
 
-                <h3>Customer Reviews</h3>
+            <!-- =================================================
+                 REVIEWS TAB
+            ================================================== -->
 
-                <p>
-                    ⭐⭐⭐⭐⭐ Excellent performance and battery backup.
-                </p>
+            <div
+                class="tab-box"
+                id="reviews">
 
-                <p>
-                    ⭐⭐⭐⭐☆ Great value for money. Highly recommended.
-                </p>
+                <h3>
+                    Customer Reviews
+                </h3>
+
+
+                <!-- Review 01 -->
+
+                <div class="review-item">
+
+                    <p>
+
+                        ⭐⭐⭐⭐⭐
+
+                        Excellent performance and
+                        battery backup.
+
+                    </p>
+
+                </div>
+
+
+                <!-- Review 02 -->
+
+                <div class="review-item">
+
+                    <p>
+
+                        ⭐⭐⭐⭐☆
+
+                        Great value for money.
+                        Highly recommended.
+
+                    </p>
+
+                </div>
 
             </div>
 
@@ -788,45 +846,68 @@
 
 </section>
 
-<!-- ========================================================= -->
-<!-- PRODUCT TABS END -->
 
-<!-- ========================================================= -->
-<!-- RELATED PRODUCTS START -->
-<!-- ========================================================= -->
+<!-- =========================================================
+     RELATED PRODUCTS SECTION
+========================================================= -->
 
-<section class="related-products">
+<section class="related_products">
 
     <div class="container">
 
+
+        <!-- Section title -->
+
         <div class="section-title">
 
-            <h2>Related Products</h2>
+            <h2>
+                More Products You May Like
+            </h2>
 
             <p>
-                Explore more laptops and accessories that match your needs.
+
+                Explore more laptops and accessories
+                that match your needs.
+
             </p>
 
         </div>
 
+
+        <!-- Products grid -->
+
         <div class="products-grid">
 
-            <!-- Product 01 -->
+
+            <!-- =================================================
+                 PRODUCT 01 — HP PAVILION
+            ================================================== -->
 
             <div class="product-card">
 
                 <div class="product-image">
 
-                    <span class="badge">-10%</span>
+                    <span class="badge">
+                        -10%
+                    </span>
 
-                    <a href="product-details.html">
 
-                        <img src="images/products/Laptop-2.jpeg"
-                             alt="HP Pavilion Laptop">
+                    <!-- IMPORTANT:
+                         Use product_details.html
+                    -->
+
+                    <a
+                        href="product_details.html?product=hp-pavilion-15">
+
+                        <img
+                            src="images/products/Laptop-2.jpeg"
+                            alt="HP Pavilion 15 Laptop"
+                            loading="lazy">
 
                     </a>
 
                 </div>
+
 
                 <div class="product-content">
 
@@ -834,13 +915,18 @@
                         Laptop
                     </span>
 
+
                     <h3>
 
-                        <a href="product-details.html">
+                        <a
+                            href="product_details.html?product=hp-pavilion-15">
+
                             HP Pavilion 15 Laptop
+
                         </a>
 
                     </h3>
+
 
                     <div class="product-rating">
 
@@ -851,6 +937,7 @@
                         <i class="fa-regular fa-star"></i>
 
                     </div>
+
 
                     <div class="product-price">
 
@@ -868,22 +955,32 @@
 
             </div>
 
-            <!-- Product 02 -->
+
+            <!-- =================================================
+                 PRODUCT 02 — LENOVO
+            ================================================== -->
 
             <div class="product-card">
 
                 <div class="product-image">
 
-                    <span class="badge">New</span>
+                    <span class="badge">
+                        New
+                    </span>
 
-                    <a href="product-details.html">
 
-                        <img src="images/products/Laptop-3.jpeg"
-                             alt="Lenovo IdeaPad">
+                    <a
+                        href="product_details.html?product=lenovo-ideapad-slim-5">
+
+                        <img
+                            src="images/products/Laptop-3.jpeg"
+                            alt="Lenovo IdeaPad Slim 5 Laptop"
+                            loading="lazy">
 
                     </a>
 
                 </div>
+
 
                 <div class="product-content">
 
@@ -891,13 +988,18 @@
                         Laptop
                     </span>
 
+
                     <h3>
 
-                        <a href="product-details.html">
+                        <a
+                            href="product_details.html?product=lenovo-ideapad-slim-5">
+
                             Lenovo IdeaPad Slim 5
+
                         </a>
 
                     </h3>
+
 
                     <div class="product-rating">
 
@@ -908,6 +1010,7 @@
                         <i class="fa-solid fa-star-half-stroke"></i>
 
                     </div>
+
 
                     <div class="product-price">
 
@@ -921,22 +1024,32 @@
 
             </div>
 
-            <!-- Product 03 -->
+
+            <!-- =================================================
+                 PRODUCT 03 — ASUS
+            ================================================== -->
 
             <div class="product-card">
 
                 <div class="product-image">
 
-                    <span class="badge">-15%</span>
+                    <span class="badge">
+                        -15%
+                    </span>
 
-                    <a href="product-details.html">
 
-                        <img src="images/products/Laptop-4.jpeg"
-                             alt="ASUS VivoBook">
+                    <a
+                        href="product_details.html?product=asus-vivobook-15">
+
+                        <img
+                            src="images/products/Laptop-4.jpeg"
+                            alt="ASUS VivoBook 15 Laptop"
+                            loading="lazy">
 
                     </a>
 
                 </div>
+
 
                 <div class="product-content">
 
@@ -944,13 +1057,18 @@
                         Laptop
                     </span>
 
+
                     <h3>
 
-                        <a href="product-details.html">
+                        <a
+                            href="product_details.html?product=asus-vivobook-15">
+
                             ASUS VivoBook 15
+
                         </a>
 
                     </h3>
+
 
                     <div class="product-rating">
 
@@ -961,6 +1079,7 @@
                         <i class="fa-regular fa-star"></i>
 
                     </div>
+
 
                     <div class="product-price">
 
@@ -978,22 +1097,32 @@
 
             </div>
 
-            <!-- Product 04 -->
+
+            <!-- =================================================
+                 PRODUCT 04 — ACER
+            ================================================== -->
 
             <div class="product-card">
 
                 <div class="product-image">
 
-                    <span class="badge">Hot</span>
+                    <span class="badge">
+                        Hot
+                    </span>
 
-                    <a href="product-details.html">
 
-                        <img src="images/products/Laptop-1.jpeg"
-                             alt="Acer Aspire 5">
+                    <a
+                        href="product_details.html?product=acer-aspire-5">
+
+                        <img
+                            src="images/products/Laptop-5.jpeg"
+                            alt="Acer Aspire 5 Laptop"
+                            loading="lazy">
 
                     </a>
 
                 </div>
+
 
                 <div class="product-content">
 
@@ -1001,13 +1130,18 @@
                         Laptop
                     </span>
 
+
                     <h3>
 
-                        <a href="product-details.html">
+                        <a
+                            href="product_details.html?product=acer-aspire-5">
+
                             Acer Aspire 5
+
                         </a>
 
                     </h3>
+
 
                     <div class="product-rating">
 
@@ -1018,6 +1152,7 @@
                         <i class="fa-solid fa-star"></i>
 
                     </div>
+
 
                     <div class="product-price">
 
@@ -1031,15 +1166,15 @@
 
             </div>
 
+
         </div>
 
     </div>
 
 </section>
-
-<!-- ========================================================= -->
-<!-- RELATED PRODUCTS END -->
-
+<!-- =========================================================
+     END OF PRODUCT DETAILS PAGE CONTENT
+========================================================= -->
 <!-- ========================================================= -->
 <!-- NEWSLETTER START -->
 <!-- ========================================================= -->
