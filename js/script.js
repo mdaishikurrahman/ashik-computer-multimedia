@@ -358,9 +358,9 @@ function loadCart() {
 
         if (empty) empty.style.display = "block";
 
-        if (subtotal) subtotal.textContent = "৳0";
-        if (shipping) shipping.textContent = "৳0";
-        if (grandTotal) grandTotal.textContent = "৳0";
+        if (subtotal) subtotal.textContent = "$0";
+        if (shipping) shipping.textContent = "$0";
+        if (grandTotal) grandTotal.textContent = "$0";
 
         if (totalItems) {
 
@@ -406,7 +406,7 @@ function loadCart() {
 
 <td>
 
-৳${item.price.toLocaleString()}
+$${item.price.toLocaleString()}
 
 </td>
 
@@ -422,7 +422,7 @@ onchange="changeQty(${index}, this.value)">
 
 <td>
 
-৳${itemTotal.toLocaleString()}
+$${itemTotal.toLocaleString()}
 
 </td>
 
@@ -447,20 +447,20 @@ onclick="removeItem(${index})">
     if (subtotal) {
 
         subtotal.textContent =
-            "৳" + sub.toLocaleString();
+            "$" + sub.toLocaleString();
 
     }
 
     if (shipping) {
 
-        shipping.textContent = "৳150";
+        shipping.textContent = "$15";
 
     }
 
     if (grandTotal) {
 
         grandTotal.textContent =
-            "৳" + (sub + 150).toLocaleString();
+            "$" + (sub + 15).toLocaleString();
 
     }
 
@@ -658,7 +658,7 @@ if(trackResult){
             order.shipping;
 
         document.getElementById("order-total").textContent =
-            "৳" + order.total.toLocaleString();
+            "$" + order.total.toLocaleString();
 
     }
 
