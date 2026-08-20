@@ -14,14 +14,14 @@
 
 .brands-header h2{
     font-size:38px;
-    color:#222;
+    color:var(--text-heading);
     margin-bottom:15px;
 }
 
 .brands-header p{
     max-width:750px;
     margin:auto;
-    color:#666;
+    color:var(--text-secondary);
     line-height:1.8;
     font-size:16px;
 }
@@ -41,7 +41,7 @@
 ========================================================= */
 
 .brand-card{
-    background:#fff;
+    background:var(--surface-bg);
     padding:30px 20px;
     text-align:center;
     border-radius:15px;
@@ -68,12 +68,12 @@
 
 .brand-card h3{
     font-size:22px;
-    color:#222;
+    color:var(--text-heading);
     margin-bottom:10px;
 }
 
 .brand-card p{
-    color:#666;
+    color:var(--text-secondary);
     font-size:15px;
     line-height:1.7;
     min-height:50px;
@@ -83,7 +83,7 @@
 .brand-card a{
     display:inline-block;
     padding:12px 28px;
-    background:#0d6efd;
+    background:var(--brand-primary);
     color:#fff;
     text-decoration:none;
     border-radius:50px;
