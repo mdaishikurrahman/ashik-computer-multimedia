@@ -4,7 +4,7 @@
 
 .categories {
     padding: 70px 0 130px;
-    background: #f5f7fb;
+    background:var(--subtle-bg);
 }
 
 
@@ -21,7 +21,7 @@
 .categories-header h2 {
     font-size: 38px;
     font-weight: 700;
-    color: #222;
+    color:var(--text-heading);
     margin: 0 0 15px;
     line-height: 1.2;
 }
@@ -29,7 +29,7 @@
 .categories-header p {
     max-width: 750px;
     margin: 0 auto;
-    color: #666;
+    color:var(--text-secondary);
     font-size: 16px;
     line-height: 1.8;
 }
@@ -51,7 +51,7 @@
 ========================================================= */
 
 .category-card {
-    background: #ffffff;
+    background:var(--surface-bg);
     padding: 30px 25px;
     border-radius: 15px;
     text-align: center;
@@ -103,7 +103,7 @@
 .category-card h3 {
     font-size: 23px;
     font-weight: 700;
-    color: #222;
+    color:var(--text-heading);
 
     margin: 0 0 12px;
 }
@@ -114,7 +114,7 @@
 ========================================================= */
 
 .category-card p {
-    color: #666;
+    color:var(--text-secondary);
     font-size: 15px;
     line-height: 1.7;
 
@@ -133,7 +133,7 @@
 
     padding: 12px 28px;
 
-    background: #0d6efd;
+    background: var(--brand-primary);
     color: #ffffff;
 
     text-decoration: none;
