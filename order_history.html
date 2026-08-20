@@ -2,6 +2,15 @@
 <html lang="en">
 
 <head>
+        <script id="themeInit">
+            (function(){
+                var t = localStorage.getItem("theme");
+                if(!t){
+                    t = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+                }
+                document.documentElement.setAttribute("data-theme", t);
+            })();
+        </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,8 +21,11 @@
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="css/theme.css">
+
+        <!-- Main CSS -->
+        <link rel="stylesheet" href="css/style.css">
 
     <!-- Product Details CSS -->
     <link rel="stylesheet" href="css/order_history.css">
@@ -109,6 +121,11 @@
 
         <div class="header-icons">
 
+            <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                <i class="fa-solid fa-moon"></i>
+                <i class="fa-solid fa-sun"></i>
+            </button>
+
             <a href="wishlist.html">
                 <i class="fa-regular fa-heart"></i>
             </a>
@@ -120,7 +137,7 @@
 
             <div class="cart-price">
                 <small>Cart Total</small>
-                <strong>৳0.00</strong>
+                <strong>$0.00</strong>
             </div>
 
             <a href="account.html">
@@ -285,7 +302,7 @@
 
                         <td>08 Aug 2026</td>
 
-                        <td>৳169,950</td>
+                        <td>$1,700</td>
 
                         <td>
 
@@ -318,7 +335,7 @@
 
                         <td>15 Aug 2026</td>
 
-                        <td>৳85,000</td>
+                        <td>$850</td>
 
                         <td>
 
@@ -330,7 +347,7 @@
 
                         </td>
 
-                        <td>bKash</td>
+                        <td>PayPal</td>
 
                         <td>
 
@@ -351,7 +368,7 @@
 
                         <td>21 Aug 2026</td>
 
-                        <td>৳6,850</td>
+                        <td>$68</td>
 
                         <td>
 
@@ -363,7 +380,7 @@
 
                         </td>
 
-                        <td>Nagad</td>
+                        <td>Stripe</td>
 
                         <td>
 
@@ -384,7 +401,7 @@
 
                         <td>29 Aug 2026</td>
 
-                        <td>৳24,500</td>
+                        <td>$245</td>
 
                         <td>
 
@@ -505,13 +522,13 @@
             <p>
                 Your trusted destination for genuine laptops, desktop PCs,
                 gaming computers, printers, networking devices, CCTV systems
-                and computer accessories at competitive prices in Bangladesh.
+                and computer accessories at competitive prices, delivered worldwide.
             </p>
     
             <div class="footer-contact-mini">
                 <p>
                     <i class="fa-solid fa-location-dot"></i>
-                    Meherpur, Bangladesh
+                    Serving customers worldwide
                 </p>
     
                 <p>
@@ -654,9 +671,8 @@
     
             <img src="images/payment/visa.png" alt="Visa">
             <img src="images/payment/mastercard.png" alt="Mastercard">
-            <img src="images/payment/bkash.png" alt="bKash">
-            <img src="images/payment/nagad.png" alt="Nagad">
-            <img src="images/payment/rocket.png" alt="Rocket">
+            <img src="images/payment/paypal.svg" alt="PayPal">
+            <img src="images/payment/stripe.svg" alt="Stripe">
     
         </div>
     
@@ -696,6 +712,8 @@
     <script src="js/order_history.js"></script>
    
     
-    </body>
+        <script src="js/theme.js"></script>
+
+</body>
     </html>
     
