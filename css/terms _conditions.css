@@ -4,7 +4,7 @@
 
 .terms{
     padding:80px 0;
-    background:#f5f7fb;
+    background:var(--subtle-bg);
 }
 
 /* =========================================================
@@ -18,14 +18,14 @@
 
 .terms-header h2{
     font-size:38px;
-    color:#222;
+    color:var(--text-heading);
     margin-bottom:15px;
 }
 
 .terms-header p{
     max-width:700px;
     margin:auto;
-    color:#666;
+    color:var(--text-secondary);
     line-height:1.8;
 }
 
@@ -44,10 +44,10 @@
 ========================================================= */
 
 .terms-card{
-    background:#fff;
+    background:var(--surface-bg);
     padding:30px;
     border-radius:12px;
-    border-left:5px solid #0d6efd;
+    border-left:5px solid var(--brand-primary);
     box-shadow:0 10px 25px rgba(0,0,0,.08);
     transition:.3s;
 }
@@ -58,13 +58,13 @@
 }
 
 .terms-card h3{
-    color:#0d6efd;
+    color:var(--brand-primary);
     font-size:22px;
     margin-bottom:15px;
 }
 
 .terms-card p{
-    color:#666;
+    color:var(--text-secondary);
     line-height:1.9;
     font-size:15px;
 }
