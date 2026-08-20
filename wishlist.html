@@ -2,6 +2,15 @@
 <html lang="en">
 
 <head>
+        <script id="themeInit">
+            (function(){
+                var t = localStorage.getItem("theme");
+                if(!t){
+                    t = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+                }
+                document.documentElement.setAttribute("data-theme", t);
+            })();
+        </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,8 +21,11 @@
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="css/theme.css">
+
+        <!-- Main CSS -->
+        <link rel="stylesheet" href="css/style.css">
 
     <!-- Product Details CSS -->
     <link rel="stylesheet" href="css/wishlist.css">
@@ -109,6 +121,11 @@
 
         <div class="header-icons">
 
+            <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                <i class="fa-solid fa-moon"></i>
+                <i class="fa-solid fa-sun"></i>
+            </button>
+
             <a href="wishlist.html">
                 <i class="fa-regular fa-heart"></i>
             </a>
@@ -120,7 +137,7 @@
 
             <div class="cart-price">
                 <small>Cart Total</small>
-                <strong>৳0.00</strong>
+                <strong>$0.00</strong>
             </div>
 
             <a href="account.html">
@@ -276,7 +293,7 @@
 
                         </td>
 
-                        <td>৳89,900</td>
+                        <td>$899</td>
 
                         <td>
 
@@ -329,7 +346,7 @@
 
                         </td>
 
-                        <td>৳78,500</td>
+                        <td>$785</td>
 
                         <td>
 
@@ -382,7 +399,7 @@
 
                         </td>
 
-                        <td>৳79,900</td>
+                        <td>$799</td>
 
                         <td>
 
@@ -435,7 +452,7 @@
 
                         </td>
 
-                        <td>৳74,900</td>
+                        <td>$749</td>
 
                         <td>
 
@@ -656,7 +673,7 @@
     
                     <li>
                         <i class="fa-solid fa-location-dot"></i>
-                        Meherpur, Bangladesh
+                        Serving customers worldwide
                     </li>
     
                     <li>
@@ -691,12 +708,13 @@
                 <img src="images/payment/visa.png" alt="Visa">
     
                 <img src="images/payment/mastercard.png" alt="MasterCard">
+
+                <img src="images/payment/paypal.svg" alt="PayPal">
+
+                <img src="images/payment/stripe.svg" alt="Stripe">
     
-                <img src="images/payment/bkash.png" alt="bKash">
     
-                <img src="images/payment/nagad.png" alt="Nagad">
     
-                <img src="images/payment/rocket.png" alt="Rocket">
     
             </div>
     
@@ -725,6 +743,8 @@
     <script src="js/wishlist.js"></script>
   
     
-    </body>
+        <script src="js/theme.js"></script>
+
+</body>
     </html>
     
