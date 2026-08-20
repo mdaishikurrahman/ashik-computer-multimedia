@@ -30,9 +30,9 @@ document.addEventListener("DOMContentLoaded", function () {
         const remember =
             document.getElementById("rememberMe");
 
-        // =============================================
-        // VALIDATION
-        // =============================================
+ // =============================================
+ // VALIDATION
+ // =============================================
 
         if (email === "" || password === "") {
 
