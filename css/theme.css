@@ -1,0 +1,140 @@
+/* ============================================================
+THEME SYSTEM — LIGHT / DARK MODE
+============================================================ */
+
+:root{
+    /* Surfaces */
+    --page-bg:#f8fafc;
+    --surface-bg:#ffffff;
+    --subtle-bg:#f5f7fb;
+
+    /* Text */
+    --text-heading:#111827;
+    --text-secondary:#6b7280;
+
+    /* Borders */
+    --border-color:#e5e7eb;
+    --border-color-strong:#d1d5db;
+
+    /* Brand */
+    --brand-primary:#2563eb;
+    --brand-primary-hover:#1d4ed8;
+
+    /* Shadow */
+    --shadow-color:rgba(0,0,0,.08);
+
+    color-scheme: light;
+}
+
+[data-theme="dark"]{
+    /* Surfaces */
+    --page-bg:#0f172a;
+    --surface-bg:#1e293b;
+    --subtle-bg:#16213a;
+
+    /* Text */
+    --text-heading:#f1f5f9;
+    --text-secondary:#cbd5e1;
+
+    /* Borders */
+    --border-color:#334155;
+    --border-color-strong:#475569;
+
+    /* Brand (slightly brighter for contrast on dark bg) */
+    --brand-primary:#3b82f6;
+    --brand-primary-hover:#60a5fa;
+
+    /* Shadow */
+    --shadow-color:rgba(0,0,0,.4);
+
+    color-scheme: dark;
+}
+
+/* Smooth transition when switching themes */
+body,
+.header,
+.top-header,
+.footer,
+input,
+select,
+textarea,
+button{
+    transition: background-color .25s ease, color .25s ease, border-color .25s ease;
+}
+
+/* ============================================================
+THEME TOGGLE BUTTON
+============================================================ */
+
+.theme-toggle{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    width:38px;
+    height:38px;
+    border-radius:50%;
+    border:1px solid var(--border-color);
+    background:var(--subtle-bg);
+    color:var(--text-heading);
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s ease;
+}
+
+.theme-toggle:hover{
+    background:var(--brand-primary);
+    color:#fff;
+    border-color:var(--brand-primary);
+    transform:translateY(-2px);
+}
+
+.theme-toggle .fa-sun{
+    display:none;
+}
+
+[data-theme="dark"] .theme-toggle .fa-sun{
+    display:inline-block;
+}
+
+[data-theme="dark"] .theme-toggle .fa-moon{
+    display:none;
+}
+
+/* ============================================================
+DARK MODE — small manual touch-ups that CSS variables alone
+can't reach cleanly (product image tiles, tables, etc.)
+============================================================ */
+
+[data-theme="dark"] img{
+    opacity:.92;
+}
+
+[data-theme="dark"] .product-card,
+[data-theme="dark"] .product-box,
+[data-theme="dark"] table{
+    background:var(--surface-bg);
+}
+
+[data-theme="dark"] ::placeholder{
+    color:var(--text-secondary);
+    opacity:.7;
+}
+
+/* Baseline styling so inputs/selects/textareas that rely on the
+   browser default (no explicit background in page CSS) still
+   follow the theme instead of staying stuck white. More specific
+   page rules (which already use the CSS variables above) still win. */
+input:not([type="radio"]):not([type="checkbox"]),
+select,
+textarea{
+    background:var(--surface-bg);
+    color:var(--text-heading);
+    border-color:var(--border-color);
+}
+
+/* Radio buttons & checkboxes: keep native appearance, just tint
+   to match the theme instead of getting a solid background block */
+input[type="radio"],
+input[type="checkbox"]{
+    accent-color:var(--brand-primary);
+}
