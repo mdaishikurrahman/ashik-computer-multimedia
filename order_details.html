@@ -2,6 +2,15 @@
 <html lang="en">
 
 <head>
+        <script id="themeInit">
+            (function(){
+                var t = localStorage.getItem("theme");
+                if(!t){
+                    t = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+                }
+                document.documentElement.setAttribute("data-theme", t);
+            })();
+        </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,8 +21,11 @@
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="css/theme.css">
+
+        <!-- Main CSS -->
+        <link rel="stylesheet" href="css/style.css">
 
     <!-- Product Details CSS -->
     <link rel="stylesheet" href="css/order_details.css">
@@ -109,6 +121,11 @@
 
         <div class="header-icons">
 
+            <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                <i class="fa-solid fa-moon"></i>
+                <i class="fa-solid fa-sun"></i>
+            </button>
+
             <a href="wishlist.html">
                 <i class="fa-regular fa-heart"></i>
             </a>
@@ -120,7 +137,7 @@
 
             <div class="cart-price">
                 <small>Cart Total</small>
-                <strong>৳0.00</strong>
+                <strong>$0.00</strong>
             </div>
 
             <a href="account.html">
@@ -264,7 +281,7 @@
 
                 <div class="details-item">
                     <span>Shipping Address</span>
-                    <strong>Meherpur, Bangladesh</strong>
+                    <strong>Serving customers worldwide</strong>
                 </div>
 
             </div>
@@ -301,11 +318,11 @@
 
                         <td>ASUS TUF Gaming Laptop</td>
 
-                        <td>৳95,000</td>
+                        <td>$950</td>
 
                         <td>1</td>
 
-                        <td>৳95,000</td>
+                        <td>$950</td>
 
                     </tr>
 
@@ -313,11 +330,11 @@
 
                         <td>Mechanical Keyboard</td>
 
-                        <td>৳8,500</td>
+                        <td>$85</td>
 
                         <td>1</td>
 
-                        <td>৳8,500</td>
+                        <td>$85</td>
 
                     </tr>
 
@@ -325,11 +342,11 @@
 
                         <td>Gaming Mouse</td>
 
-                        <td>৳2,500</td>
+                        <td>$25</td>
 
                         <td>2</td>
 
-                        <td>৳5,000</td>
+                        <td>$50</td>
 
                     </tr>
 
@@ -337,11 +354,11 @@
 
                         <td>27" IPS Monitor</td>
 
-                        <td>৳61,450</td>
+                        <td>$614</td>
 
                         <td>1</td>
 
-                        <td>৳61,450</td>
+                        <td>$614</td>
 
                     </tr>
 
@@ -363,7 +380,7 @@
 
                 <span>Subtotal</span>
 
-                <strong>৳169,950</strong>
+                <strong>$1,700</strong>
 
             </div>
 
@@ -371,7 +388,7 @@
 
                 <span>Shipping Charge</span>
 
-                <strong>৳0</strong>
+                <strong>$0</strong>
 
             </div>
 
@@ -379,7 +396,7 @@
 
                 <span>Discount</span>
 
-                <strong>৳0</strong>
+                <strong>$0</strong>
 
             </div>
 
@@ -387,7 +404,7 @@
 
                 <span>Grand Total</span>
 
-                <strong>৳169,950</strong>
+                <strong>$1,700</strong>
 
             </div>
 
@@ -493,13 +510,13 @@
             <p>
                 Your trusted destination for genuine laptops, desktop PCs,
                 gaming computers, printers, networking devices, CCTV systems
-                and computer accessories at competitive prices in Bangladesh.
+                and computer accessories at competitive prices, delivered worldwide.
             </p>
     
             <div class="footer-contact-mini">
                 <p>
                     <i class="fa-solid fa-location-dot"></i>
-                    Meherpur, Bangladesh
+                    Serving customers worldwide
                 </p>
     
                 <p>
@@ -642,9 +659,8 @@
     
             <img src="images/payment/visa.png" alt="Visa">
             <img src="images/payment/mastercard.png" alt="Mastercard">
-            <img src="images/payment/bkash.png" alt="bKash">
-            <img src="images/payment/nagad.png" alt="Nagad">
-            <img src="images/payment/rocket.png" alt="Rocket">
+            <img src="images/payment/paypal.svg" alt="PayPal">
+            <img src="images/payment/stripe.svg" alt="Stripe">
     
         </div>
     
@@ -680,10 +696,11 @@
 <!-- ========================================================= -->
     <!-- JavaScript -->
     
-    <script src="js/all.min.js"></script>
-    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>   
     <script src="js/product_details.js"></script>
     
-    </body>
+        <script src="js/theme.js"></script>
+
+</body>
     </html>
     
