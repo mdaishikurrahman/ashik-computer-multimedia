@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <script id="themeInit">
+            (function(){
+                var t = localStorage.getItem("theme");
+                if(!t){
+                    t = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+                }
+                document.documentElement.setAttribute("data-theme", t);
+            })();
+        </script>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +23,9 @@
         crossorigin="anonymous"
         referrerpolicy="no-referrer" />
     
+        <!-- Theme CSS -->
+        <link rel="stylesheet" href="css/theme.css">
+
         <!-- Main CSS -->
         <link rel="stylesheet" href="css/style.css">
     
@@ -118,6 +130,11 @@
 
         <div class="header-icons">
 
+            <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                <i class="fa-solid fa-moon"></i>
+                <i class="fa-solid fa-sun"></i>
+            </button>
+
             <a href="wishlist.html">
                 <i class="fa-regular fa-heart"></i>
             </a>
@@ -129,7 +146,7 @@
 
             <div class="cart-price">
                 <small>Cart Total</small>
-                <strong>৳0.00</strong>
+                <strong>$0.00</strong>
             </div>
 
             <a href="account.html">
@@ -341,7 +358,7 @@
                 </div>
   
                 <div class="product-footer">
-                    <span class="product-price">৳99,875</span>
+                    <span class="product-price">$999</span>
   
                     <a href="#" class="product-cart">
                         <i class="fa-solid fa-cart-shopping"></i>
@@ -372,7 +389,7 @@
                 </div>
   
                 <div class="product-footer">
-                    <span class="product-price">৳93,625</span>
+                    <span class="product-price">$936</span>
   
                     <a href="#" class="product-cart">
                         <i class="fa-solid fa-cart-shopping"></i>
@@ -403,7 +420,7 @@
                 </div>
   
                 <div class="product-footer">
-                    <span class="product-price">৳87,375</span>
+                    <span class="product-price">$874</span>
   
                     <a href="#" class="product-cart">
                         <i class="fa-solid fa-cart-shopping"></i>
@@ -434,7 +451,7 @@
                 </div>
   
                 <div class="product-footer">
-                    <span class="product-price">৳91,125</span>
+                    <span class="product-price">$911</span>
   
                     <a href="#" class="product-cart">
                         <i class="fa-solid fa-cart-shopping"></i>
@@ -465,7 +482,7 @@
                 </div>
   
                 <div class="product-footer">
-                    <span class="product-price">৳23,625</span>
+                    <span class="product-price">$236</span>
   
                     <a href="#" class="product-cart">
                         <i class="fa-solid fa-cart-shopping"></i>
@@ -496,7 +513,7 @@
                 </div>
   
                 <div class="product-footer">
-                    <span class="product-price">৳4,875</span>
+                    <span class="product-price">$49</span>
   
                     <a href="#" class="product-cart">
                         <i class="fa-solid fa-cart-shopping"></i>
@@ -527,7 +544,7 @@
                 </div>
   
                 <div class="product-footer">
-                    <span class="product-price">৳3,625</span>
+                    <span class="product-price">$36</span>
   
                     <a href="#" class="product-cart">
                         <i class="fa-solid fa-cart-shopping"></i>
@@ -558,7 +575,7 @@
                 </div>
   
                 <div class="product-footer">
-                    <span class="product-price">৳7,375</span>
+                    <span class="product-price">$74</span>
   
                     <a href="#" class="product-cart">
                         <i class="fa-solid fa-cart-shopping"></i>
@@ -646,7 +663,7 @@
               </div>
 
               <div class="product-footer">
-                  <span class="product-price">৳149,875</span>
+                  <span class="product-price">$1,500</span>
 
                   <a href="#" class="product-cart">
                       <i class="fa-solid fa-cart-shopping"></i>
@@ -677,7 +694,7 @@
               </div>
 
               <div class="product-footer">
-                  <span class="product-price">৳187,375</span>
+                  <span class="product-price">$1,875</span>
 
                   <a href="#" class="product-cart">
                       <i class="fa-solid fa-cart-shopping"></i>
@@ -708,7 +725,7 @@
               </div>
 
               <div class="product-footer">
-                  <span class="product-price">৳37,375</span>
+                  <span class="product-price">$374</span>
 
                   <a href="#" class="product-cart">
                       <i class="fa-solid fa-cart-shopping"></i>
@@ -739,7 +756,7 @@
               </div>
 
               <div class="product-footer">
-                  <span class="product-price">৳12,375</span>
+                  <span class="product-price">$124</span>
 
                   <a href="#" class="product-cart">
                       <i class="fa-solid fa-cart-shopping"></i>
@@ -770,7 +787,7 @@
               </div>
 
               <div class="product-footer">
-                  <span class="product-price">৳31,125</span>
+                  <span class="product-price">$311</span>
 
                   <a href="#" class="product-cart">
                       <i class="fa-solid fa-cart-shopping"></i>
@@ -801,7 +818,7 @@
               </div>
 
               <div class="product-footer">
-                  <span class="product-price">৳9,875</span>
+                  <span class="product-price">$99</span>
 
                   <a href="#" class="product-cart">
                       <i class="fa-solid fa-cart-shopping"></i>
@@ -832,7 +849,7 @@
               </div>
 
               <div class="product-footer">
-                  <span class="product-price">৳27,375</span>
+                  <span class="product-price">$274</span>
 
                   <a href="#" class="product-cart">
                       <i class="fa-solid fa-cart-shopping"></i>
@@ -863,7 +880,7 @@
               </div>
 
               <div class="product-footer">
-                  <span class="product-price">৳7,375</span>
+                  <span class="product-price">$74</span>
 
                   <a href="#" class="product-cart">
                       <i class="fa-solid fa-cart-shopping"></i>
@@ -1214,13 +1231,13 @@
             <p>
                 Your trusted destination for genuine laptops, desktop PCs,
                 gaming computers, printers, networking devices, CCTV systems
-                and computer accessories at competitive prices in Bangladesh.
+                and computer accessories at competitive prices, delivered worldwide.
             </p>
     
             <div class="footer-contact-mini">
                 <p>
                     <i class="fa-solid fa-location-dot"></i>
-                    Meherpur, Bangladesh
+                    Serving customers worldwide
                 </p>
     
                 <p>
@@ -1363,9 +1380,8 @@
     
             <img src="images/payment/visa.png" alt="Visa">
             <img src="images/payment/mastercard.png" alt="Mastercard">
-            <img src="images/payment/bkash.png" alt="bKash">
-            <img src="images/payment/nagad.png" alt="Nagad">
-            <img src="images/payment/rocket.png" alt="Rocket">
+            <img src="images/payment/paypal.svg" alt="PayPal">
+            <img src="images/payment/stripe.svg" alt="Stripe">
     
         </div>
     
@@ -1403,6 +1419,8 @@
 
 
 <script src="js/script.js"></script>
+
+    <script src="js/theme.js"></script>
 
 </body>
 </html>
