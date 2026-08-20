@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let subtotal = 0;
 
-    const shipping = 150;
+    const shipping = 15;
 
     if (cart.length === 0) {
 
@@ -31,9 +31,9 @@ document.addEventListener("DOMContentLoaded", function () {
             </p>
         `;
 
-        subtotalEl.textContent = "৳0";
-        shippingEl.textContent = "৳0";
-        totalEl.textContent = "৳0";
+        subtotalEl.textContent = "$0";
+        shippingEl.textContent = "$0";
+        totalEl.textContent = "$0";
 
         return;
 
@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 <span>${item.name} × ${item.qty}</span>
 
-                <span>৳${itemTotal.toLocaleString()}</span>
+                <span>$${itemTotal.toLocaleString()}</span>
 
             </div>
 
@@ -61,13 +61,13 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     subtotalEl.textContent =
-    "৳" + subtotal.toLocaleString();
+    "$" + subtotal.toLocaleString();
 
     shippingEl.textContent =
-    "৳" + shipping.toLocaleString();
+    "$" + shipping.toLocaleString();
 
     totalEl.textContent =
-    "৳" + (subtotal + shipping).toLocaleString();
+    "$" + (subtotal + shipping).toLocaleString();
 
 });
 
@@ -187,7 +187,7 @@ if (checkoutForm) {
 
         });
 
-        const shipping = 150;
+        const shipping = 15;
 
         const total =
         subtotal + shipping;
