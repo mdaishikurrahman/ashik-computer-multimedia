@@ -151,7 +151,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             <td>
 
-                ৳${Number(order.total).toLocaleString()}
+                $${Number(order.total).toLocaleString()}
 
             </td>
 
