@@ -29,8 +29,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 "images/products/Asus Laptop-3.jpeg"
             ],
 
-            price: "৳73,900",
-            oldPrice: "৳79,900",
+            price: "$739",
+            oldPrice: "$799",
             discount: "-15%",
 
             rating: 4,
@@ -71,8 +71,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 "images/products/Dell Laptop-4.jpeg"
             ],
 
-            price: "৳89,900",
-            oldPrice: "৳95,000",
+            price: "$899",
+            oldPrice: "$950",
             discount: "-5%",
 
             rating: 4,
@@ -113,8 +113,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 "images/products/Hp Laptop-4.jpeg"
             ],
 
-            price: "৳78,500",
-            oldPrice: "৳84,000",
+            price: "$785",
+            oldPrice: "$840",
             discount: "-10%",
 
             rating: 4,
@@ -155,7 +155,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 "images/products/Lenovo Laptop-4.jpeg"
             ],
 
-            price: "৳82,900",
+            price: "$829",
             oldPrice: "",
             discount: "",
 
@@ -197,7 +197,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 "images/products/Acer Laptop-3.jpeg"
             ],
 
-            price: "৳69,900",
+            price: "$699",
             oldPrice: "",
             discount: "",
 
@@ -239,8 +239,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 "images/products/Laptop-9.jpeg"
             ],
 
-            price: "৳125,000",
-            oldPrice: "৳135,000",
+            price: "$1,250",
+            oldPrice: "$1,350",
             discount: "-7%",
 
             rating: 4.5,
@@ -281,8 +281,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 "images/products/Printer-4.jpeg"
             ],
 
-            price: "৳18,500",
-            oldPrice: "৳20,000",
+            price: "$185",
+            oldPrice: "$200",
             discount: "-8%",
 
             rating: 4.5,
@@ -325,8 +325,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 "images/products/Router-4.jpeg"
             ],
 
-            price: "৳4,500",
-            oldPrice: "৳5,000",
+            price: "$45",
+            oldPrice: "$50",
             discount: "-10%",
 
             rating: 4.5,
@@ -370,8 +370,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 "images/products/Desktop-4.jpeg"
             ],
 
-            price: "৳72,000",
-            oldPrice: "৳78,000",
+            price: "$720",
+            oldPrice: "$780",
             discount: "-8%",
 
             rating: 4.5,
@@ -414,8 +414,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 "images/products/Monitor-4.jpeg"
             ],
 
-            price: "৳18,500",
-            oldPrice: "৳20,000",
+            price: "$185",
+            oldPrice: "$200",
             discount: "-8%",
 
             rating: 4.5,
@@ -460,8 +460,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 "images/products/CCTV-4.jpeg"
             ],
 
-            price: "৳3,500",
-            oldPrice: "৳4,000",
+            price: "$35",
+            oldPrice: "$40",
             discount: "-12%",
 
             rating: 4.5,
@@ -506,8 +506,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 "images/products/Keyboard-4.jpeg"
             ],
 
-            price: "৳3,500",
-            oldPrice: "৳4,000",
+            price: "$35",
+            oldPrice: "$40",
             discount: "-12%",
 
             rating: 4.5,
