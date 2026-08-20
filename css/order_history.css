@@ -4,7 +4,7 @@
 
 .order-history{
     padding:80px 0;
-    background:#f5f7fb;
+    background:var(--subtle-bg);
 }
 
 /* =========================================================
@@ -18,14 +18,14 @@
 
 .history-header h2{
     font-size:38px;
-    color:#222;
+    color:var(--text-heading);
     margin-bottom:15px;
 }
 
 .history-header p{
     max-width:700px;
     margin:auto;
-    color:#666;
+    color:var(--text-secondary);
     line-height:1.8;
 }
 
@@ -41,7 +41,7 @@
 }
 
 .summary-card{
-    background:#fff;
+    background:var(--surface-bg);
     border-radius:12px;
     padding:30px 20px;
     text-align:center;
@@ -55,18 +55,18 @@
 
 .summary-card i{
     font-size:40px;
-    color:#0d6efd;
+    color:var(--brand-primary);
     margin-bottom:15px;
 }
 
 .summary-card h3{
     font-size:32px;
-    color:#222;
+    color:var(--text-heading);
     margin-bottom:10px;
 }
 
 .summary-card p{
-    color:#666;
+    color:var(--text-secondary);
 }
 
 /* =========================================================
@@ -74,7 +74,7 @@
 ========================================================= */
 
 .history-table{
-    background:#fff;
+    background:var(--surface-bg);
     border-radius:12px;
     overflow:hidden;
     box-shadow:0 10px 30px rgba(0,0,0,.08);
@@ -87,7 +87,7 @@
 }
 
 .history-table th{
-    background:#0d6efd;
+    background:var(--brand-primary);
     color:#fff;
     padding:18px;
     font-size:16px;
@@ -97,7 +97,7 @@
 .history-table td{
     padding:18px;
     border-bottom:1px solid #eee;
-    color:#555;
+    color:var(--text-secondary);
 }
 
 .history-table tbody tr:hover{
@@ -123,7 +123,7 @@
 
 .shipped{
     background:#cfe2ff;
-    color:#0d6efd;
+    color:var(--brand-primary);
 }
 
 .pending{
@@ -143,7 +143,7 @@
 .view-btn{
     display:inline-block;
     padding:10px 18px;
-    background:#0d6efd;
+    background:var(--brand-primary);
     color:#fff;
     text-decoration:none;
     border-radius:6px;
@@ -178,7 +178,7 @@
 }
 
 .continue-btn{
-    background:#0d6efd;
+    background:var(--brand-primary);
     color:#fff;
 }
 
