@@ -4,7 +4,7 @@
 
 .about{
     padding:80px 0;
-    background:#f5f7fb;
+    background:var(--subtle-bg);
 }
 
 /* =========================================================
@@ -18,14 +18,14 @@
 
 .about-header h2{
     font-size:38px;
-    color:#222;
+    color:var(--text-heading);
     margin-bottom:15px;
 }
 
 .about-header p{
     max-width:700px;
     margin:auto;
-    color:#666;
+    color:var(--text-secondary);
     line-height:1.8;
     font-size:16px;
 }
@@ -57,7 +57,7 @@
 ========================================================= */
 
 .about-content{
-    background:#fff;
+    background:var(--surface-bg);
     padding:45px;
     border-radius:15px;
     box-shadow:0 10px 30px rgba(0,0,0,.08);
@@ -65,12 +65,12 @@
 
 .about-content h3{
     font-size:32px;
-    color:#222;
+    color:var(--text-heading);
     margin-bottom:20px;
 }
 
 .about-content p{
-    color:#555;
+    color:var(--text-secondary);
     line-height:1.9;
     margin-bottom:18px;
 }
@@ -87,12 +87,12 @@
 
 .about-content ul li{
     margin-bottom:16px;
-    color:#333;
+    color:var(--text-heading);
     font-size:16px;
 }
 
 .about-content ul li i{
-    color:#0d6efd;
+    color:var(--brand-primary);
     margin-right:10px;
 }
 
@@ -103,7 +103,7 @@
 .about-btn{
     display:inline-block;
     padding:14px 35px;
-    background:#0d6efd;
+    background:var(--brand-primary);
     color:#fff;
     text-decoration:none;
     font-weight:600;
