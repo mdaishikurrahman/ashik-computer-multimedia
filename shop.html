@@ -2,6 +2,15 @@
 <html lang="en">
 
 <head>
+        <script id="themeInit">
+            (function(){
+                var t = localStorage.getItem("theme");
+                if(!t){
+                    t = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+                }
+                document.documentElement.setAttribute("data-theme", t);
+            })();
+        </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,8 +20,11 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="css/theme.css">
+
+        <!-- Main CSS -->
+        <link rel="stylesheet" href="css/style.css">
 
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="css/responsive.css">
@@ -109,6 +121,11 @@
         
         <div class="header-icons">
 
+            <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                <i class="fa-solid fa-moon"></i>
+                <i class="fa-solid fa-sun"></i>
+            </button>
+
             <a href="wishlist.html">
                 <i class="fa-regular fa-heart"></i>
             </a>
@@ -120,7 +137,7 @@
 
             <div class="cart-price">
                 <small>Cart Total</small>
-                <strong>৳0.00</strong>
+                <strong>$0.00</strong>
             </div>
 
             <a href="account.html">
@@ -202,7 +219,7 @@
 
                 Discover Genuine Laptops, Desktop PCs, Gaming Computers,
                 Printers, Networking Devices, CCTV Systems and Accessories
-                at the Best Prices in Bangladesh.
+                at the Best Prices, Delivered Worldwide.
 
             </h4>
 
@@ -316,15 +333,15 @@
 
                 <ul>
 
-                    <li><a href="#">৳0 - ৳10,000</a></li>
+                    <li><a href="#">$0 - $100</a></li>
 
-                    <li><a href="#">৳10,000 - ৳30,000</a></li>
+                    <li><a href="#">$100 - $300</a></li>
 
-                    <li><a href="#">৳30,000 - ৳60,000</a></li>
+                    <li><a href="#">$300 - $600</a></li>
 
-                    <li><a href="#">৳60,000 - ৳100,000</a></li>
+                    <li><a href="#">$600 - $1,000</a></li>
 
-                    <li><a href="#">৳100,000+</a></li>
+                    <li><a href="#">$1,000+</a></li>
 
                 </ul>
 
@@ -435,15 +452,15 @@
 
         <div class="product-price">
 
-            <span class="new-price">৳72,500</span>
-            <span class="old-price">৳80,000</span>
+            <span class="new-price">$725</span>
+            <span class="old-price">$800</span>
 
         </div>
 
         <a href="#"
    class="cart-btn"
    data-name="ASUS VivoBook 15 Core i5 13th Gen"
-   data-price="72500"
+   data-price="725"
    data-image="images/products/asus-vivobook.jpeg">
 
     <i class="fa-solid fa-cart-shopping"></i>
@@ -511,14 +528,14 @@
      
          <div class="product-price">
      
-             <span class="new-price">৳78,000</span>
+             <span class="new-price">$780</span>
      
          </div>
      
          <a href="cart.html"
             class="cart-btn"
             data-name="Dell Inspiron 15 Core i5 Laptop"
-            data-price="78000"
+            data-price="780"
             data-image="images/products/dell-inspiron.jpeg">
      
              <i class="fa-solid fa-cart-shopping"></i>
@@ -587,14 +604,14 @@
 
         <div class="product-price">
 
-            <span class="new-price">৳85,000</span>
+            <span class="new-price">$850</span>
 
         </div>
 
         <a href="cart.html"
            class="cart-btn"
            data-name="HP Pavilion Ryzen 5 Laptop"
-           data-price="85000"
+           data-price="850"
            data-image="images/products/hp-pavilion.jpeg">
 
             <i class="fa-solid fa-cart-shopping"></i>
@@ -661,14 +678,14 @@
 
         <div class="product-price">
 
-            <span class="new-price">৳64,000</span>
+            <span class="new-price">$640</span>
 
         </div>
 
         <a href="cart.html"
            class="cart-btn"
            data-name="Lenovo IdeaPad Slim 3"
-           data-price="64000"
+           data-price="640"
            data-image="images/products/lenovo-ideapad.jpeg">
 
             <i class="fa-solid fa-cart-shopping"></i>
@@ -722,14 +739,14 @@
 
         <div class="product-price">
 
-            <span class="new-price">৳61,000</span>
+            <span class="new-price">$610</span>
 
         </div>
 
         <a href="cart.html"
            class="cart-btn"
            data-name="Acer Aspire 5"
-           data-price="61000"
+           data-price="610"
            data-image="images/products/acer-aspire.jpeg">
 
             <i class="fa-solid fa-cart-shopping"></i>
@@ -795,7 +812,7 @@
 
             <span class="new-price">
 
-                ৳115,000
+                $1,150
 
             </span>
 
@@ -804,7 +821,7 @@
         <a href="cart.html"
            class="cart-btn"
            data-name="MSI Katana 15"
-           data-price="115000"
+           data-price="1150"
            data-image="images/products/msi-katana.jpeg">
 
             <i class="fa-solid fa-cart-shopping"></i>
@@ -871,7 +888,7 @@
 
             <span class="new-price">
 
-                ৳16,500
+                $165
 
             </span>
 
@@ -880,7 +897,7 @@
         <a href="cart.html"
            class="cart-btn"
            data-name="Canon PIXMA G3010"
-           data-price="16500"
+           data-price="165"
            data-image="images/products/canon-pixma-g3010.jpeg">
 
             <i class="fa-solid fa-cart-shopping"></i>
@@ -945,7 +962,7 @@
 
             <span class="new-price">
 
-                ৳4,800
+                $48
 
             </span>
 
@@ -954,7 +971,7 @@
         <a href="cart.html"
            class="cart-btn"
            data-name="TP-Link Archer C6"
-           data-price="4800"
+           data-price="48"
            data-image="images/products/tp-link-archer-c6.jpeg">
 
             <i class="fa-solid fa-cart-shopping"></i>
@@ -1026,15 +1043,15 @@
 
         <div class="product-price">
 
-            <span class="new-price">৳68,500</span>
-            <span class="old-price">৳74,000</span>
+            <span class="new-price">$685</span>
+            <span class="old-price">$740</span>
 
         </div>
 
         <a href="#"
            class="cart-btn"
            data-name="ASUS ExpertCenter Core i5 Desktop"
-           data-price="68500"
+           data-price="685"
            data-image="images/desktop.png">
 
             <i class="fa-solid fa-cart-shopping"></i>
@@ -1105,15 +1122,15 @@
 
         <div class="product-price">
 
-            <span class="new-price">৳18,500</span>
-            <span class="old-price">৳20,000</span>
+            <span class="new-price">$185</span>
+            <span class="old-price">$200</span>
 
         </div>
 
         <a href="#"
            class="cart-btn"
            data-name="ASUS 24 Inch Monitor"
-           data-price="18500"
+           data-price="185"
            data-image="images/Monitor.png">
 
             <i class="fa-solid fa-cart-shopping"></i>
@@ -1181,14 +1198,14 @@
 
         <div class="product-price">
 
-            <span class="new-price">৳4,200</span>
+            <span class="new-price">$42</span>
 
         </div>
 
         <a href="#"
            class="cart-btn"
            data-name="Logitech Keyboard Mouse Combo"
-           data-price="4200"
+           data-price="42"
            data-image="images/Accessories.png">
 
             <i class="fa-solid fa-cart-shopping"></i>
@@ -1259,15 +1276,15 @@
 
         <div class="product-price">
 
-            <span class="new-price">৳3,850</span>
-            <span class="old-price">৳4,500</span>
+            <span class="new-price">$38</span>
+            <span class="old-price">$45</span>
 
         </div>
 
         <a href="#"
            class="cart-btn"
            data-name="Hikvision Outdoor CCTV Camera"
-           data-price="3850"
+           data-price="38"
            data-image="images/CCTV.png">
 
             <i class="fa-solid fa-cart-shopping"></i>
@@ -1451,7 +1468,7 @@
     
                     <li>
                         <i class="fa-solid fa-location-dot"></i>
-                        Meherpur, Bangladesh
+                        Serving customers worldwide
                     </li>
     
                     <li>
@@ -1486,12 +1503,13 @@
                 <img src="images/payment/visa.png" alt="Visa">
     
                 <img src="images/payment/mastercard.png" alt="MasterCard">
+
+                <img src="images/payment/paypal.svg" alt="PayPal">
+
+                <img src="images/payment/stripe.svg" alt="Stripe">
     
-                <img src="images/payment/bkash.png" alt="bKash">
     
-                <img src="images/payment/nagad.png" alt="Nagad">
     
-                <img src="images/payment/rocket.png" alt="Rocket">
     
             </div>
     
@@ -1519,6 +1537,8 @@
    
     <script src="js/script.js"></script>
     
-    </body>
+        <script src="js/theme.js"></script>
+
+</body>
     </html>
     
