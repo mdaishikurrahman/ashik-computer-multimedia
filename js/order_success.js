@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                     <span>${item.name} × ${item.qty}</span>
 
-                    <span>৳${(item.price * item.qty).toLocaleString()}</span>
+                    <span>$${(item.price * item.qty).toLocaleString()}</span>
 
                 </div>
 
@@ -112,15 +112,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (subtotal)
         subtotal.textContent =
-            "৳" + Number(order.subtotal).toLocaleString();
+            "$" + Number(order.subtotal).toLocaleString();
 
     if (shipping)
         shipping.textContent =
-            "৳" + Number(order.shipping).toLocaleString();
+            "$" + Number(order.shipping).toLocaleString();
 
     if (total)
         total.textContent =
-            "৳" + Number(order.total).toLocaleString();
+            "$" + Number(order.total).toLocaleString();
 
     // =====================================
     // TRACK ORDER BUTTON
