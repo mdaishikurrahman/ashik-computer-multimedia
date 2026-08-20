@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
             order.address;
 
         document.getElementById("order-total").textContent =
-            "৳" + Number(order.total).toLocaleString();
+            "$" + Number(order.total).toLocaleString();
 
         document.getElementById("placed-date").textContent =
             new Date(order.date).toLocaleString();
