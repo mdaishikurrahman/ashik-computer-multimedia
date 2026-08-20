@@ -140,7 +140,7 @@ function renderWishlist(){
 
             <td>
 
-                ৳${item.price.toLocaleString()}
+                $${item.price.toLocaleString()}
 
             </td>
 
